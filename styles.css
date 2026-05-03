@@ -2857,3 +2857,34 @@ background:#f4f4f4;
     color: #64748b;
     line-height: 1.6;
 }
+.card {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card:hover {
+  border-color: #2563eb;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.card-btn {
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.card-content {
+  display: none;
+  padding: 20px;
+  color: #475569;
+}
+blockquote {
+  margin-top: 15px;
+  padding-left: 15px;
+  border-left: 4px solid #2563eb;
+  font-style: italic;
+  color: #1e3a8a;
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -963,9 +964,11 @@
 <!-- RCL Section -->
   <div class="max-w-6xl mx-auto mt-20">
 
-    <h3 class="text-3xl font-bold text-slate-900 mb-10 text-center">
-      Student Leadership Council 2025
-    </h3>
+  <div class="bg-blue-50/50 py-4 rounded-2xl mb-10">
+  <h3 class="text-3xl font-bold text-blue-800 text-center">
+    Student Leadership Council 2025
+  </h3>
+</div>
 
     <div class="grid md:grid-cols-3 gap-10">
 
@@ -986,7 +989,50 @@
 
     </div>
   </div>
+<div class="mt-12 max-w-4xl mx-auto px-4">
+    <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Ambassadors of Positive Discipline</h2>
+        <div class="h-1 w-20 bg-slate-900 mx-auto rounded-full"></div>
+    </div>
 
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+        
+        <div class="space-y-4">
+            <p class="text-slate-600 leading-relaxed italic border-l-4 border-slate-200 pl-4">
+                "The RCL supports discipline not by enforcing punishment, but by modelling exemplary behaviour and fostering a culture of respect."
+            </p>
+            <p class="text-slate-600 leading-relaxed text-sm">
+                By leading initiatives like the recognition of positive behaviour, the RCL helps learners take ownership of their conduct, contributing to a motivated and successful school environment.
+            </p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 shadow-sm">
+            <h3 class="text-sm font-bold text-slate-900 uppercase tracking-widest mb-4">The SKAVS Framework</h3>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-3 text-slate-700 text-sm">
+                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-slate-900 text-white flex items-center justify-center text-[10px] font-bold">S</span>
+                    <strong>Skills:</strong> Developing essential life tools.
+                </li>
+                <li class="flex items-center gap-3 text-slate-700 text-sm">
+                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-slate-900 text-white flex items-center justify-center text-[10px] font-bold">K</span>
+                    <strong>Knowledge:</strong> Understanding expectations.
+                </li>
+                <li class="flex items-center gap-3 text-slate-700 text-sm">
+                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-slate-900 text-white flex items-center justify-center text-[10px] font-bold">A</span>
+                    <strong>Attitude:</strong> Adopting constructive mindsets.
+                </li>
+                <li class="flex items-center gap-3 text-slate-700 text-sm">
+                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-slate-900 text-white flex items-center justify-center text-[10px] font-bold">V</span>
+                    <strong>Values:</strong> Upholding strong principles.
+                </li>
+                <li class="flex items-center gap-3 text-slate-700 text-sm">
+                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-slate-600 text-white flex items-center justify-center text-[10px] font-bold">S</span>
+                    <strong>Surpassing Standards:</strong> Owning your conduct.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
   <!-- Main Container -->
   <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-md border border-slate-100 p-10">
 
@@ -1429,12 +1475,18 @@
 
     <!-- HEADER -->
     <div class="text-center mb-16">
-      <h2 class="text-5xl font-black text-slate-900 mb-4">About Us</h2>
-      <p class="text-lg text-slate-600 max-w-3xl mx-auto">
-        Reach the school through official communication channels below.
-      </p>
-      <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mt-6 rounded-full"></div>
-    </div>
+  <h2 id="aboutHeading" class="text-6xl lg:text-7xl font-black text-slate-900 mb-6 tracking-tighter">
+    <span class="bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-600 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient uppercase">
+      About Us
+    </span>
+  </h2>
+  
+  <div class="h-1.5 w-24 bg-gradient-to-r from-blue-600 to-indigo-500 mx-auto rounded-full shadow-md"></div>
+  
+  <p class="text-lg text-slate-600 max-w-3xl mx-auto mt-8 font-medium leading-relaxed">
+    Reach the school through official communication channels below.
+  </p>
+</div>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <section class="vision-section">
@@ -1623,6 +1675,156 @@
     </div>
 
   </div>
+
+<section class="py-24 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: linear-gradient(#1e40af 1px, transparent 1px), linear-gradient(90deg, #1e40af 1px, transparent 1px); background-size: 40px 40px;"></div>
+
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+
+    <div class="text-center mb-24">
+      <h2 class="text-xs font-black text-blue-600 uppercase tracking-[0.6em] mb-4">Founder Spotlight</h2>
+      <h3 class="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter leading-tight">
+        Q&A with the <span class="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">Architect</span>
+      </h3>
+      <div class="mt-8 h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-12 items-start">
+
+      <div class="w-full lg:w-5/12 lg:sticky lg:top-24">
+        <div class="bg-white rounded-[2.5rem] border border-slate-100 shadow-2xl overflow-hidden p-4">
+          <div class="relative w-full aspect-square overflow-hidden rounded-[2rem] bg-slate-50 mb-8">
+            <img src="images/Nkosinathi.jpg" class="w-full h-full object-cover" alt="Nkosinathi Ngwenya">
+          </div>
+          <div class="px-4 pb-6 text-center lg:text-left">
+            <h2 class="text-3xl font-black text-slate-900 tracking-tight mb-1">Nkosinathi Ngwenya</h2>
+            <p class="text-blue-600 font-bold text-sm uppercase tracking-widest mb-8">BSc Computer Science @ UP</p>
+            
+            <div class="space-y-3">
+              <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold">24</div>
+                <p class="text-slate-800 font-bold text-sm">Former School President</p>
+              </div>
+              <div class="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                <div class="w-10 h-10 rounded-xl bg-slate-900 flex items-center justify-center text-white">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                </div>
+                <p class="text-slate-800 font-bold text-sm">Platform Architect</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full lg:w-7/12 space-y-4">
+
+        <div class="qa-item">
+          <button onclick="toggleQA(1)" class="qa-btn">
+            <span>1. Tell us about your journey to Computer Science?</span>
+            <span id="icon-1" class="qa-icon">+</span>
+          </button>
+          <div id="ans-1" class="qa-content">
+            <p>"I am Nkosinathi Ngwenya, the 2024 President of Hoye Secondary School. My journey started in the same classrooms you sit in today. Through hard work and the foundation laid at Hoye, I earned my place at the University of Pretoria, where I am currently pursuing a BSc in Computer Science. Transitioning from the leader of this school to a student at one of the top tech universities in the country has been an incredible shift, but the discipline I learned here made it possible."</p>
+          </div>
+        </div>
+
+        <div class="qa-item">
+          <button onclick="toggleQA(2)" class="qa-btn">
+            <span>2. What inspired your interest in tech?</span>
+            <span id="icon-2" class="qa-icon">+</span>
+          </button>
+          <div id="ans-2" class="qa-content">
+            <p>"I’ve always been fascinated by how the digital world works, but my true inspiration came from seeing how information—or the lack of it—affects people. I realized that a website isn't just code; it’s a bridge. I wanted to learn how to build tools that solve real problems, like making sure every student at Hoye has the same access to information as someone in a private school in Sandton."</p>
+          </div>
+        </div>
+
+        <div class="qa-item">
+          <button onclick="toggleQA(3)" class="qa-btn">
+            <span>3. How did Hoye shape who you are today?</span>
+            <span id="icon-3" class="qa-icon">+</span>
+          </button>
+          <div id="ans-3" class="qa-content">
+            <p>"Hoye taught me that leadership isn't about the title of 'President'; it’s about service and responsibility. The challenges we faced and the 'SKAVS' principles we followed taught me how to be resilient. Studying at UP is tough, but when things get hard, I remember the grit I developed at Hoye. This school didn't just give me a matric certificate; it gave me the character to compete at a national level."</p>
+          </div>
+        </div>
+
+        <div class="qa-item">
+          <button onclick="toggleQA(7)" class="qa-btn">
+            <span>4. Biggest technical challenges?</span>
+            <span id="icon-7" class="qa-icon">+</span>
+          </button>
+          <div id="ans-7" class="qa-content">
+            <p>"The most complex challenge was architecting the Online Application System. Building a front-end is one thing, but creating a secure bridge where the Administration can manage data while Applicants can track their progress in real-time was a major hurdle. I had to learn how to manage 'State'—ensuring that when a student checks their status, the database reflects the Admin’s latest decision instantly. I overcame this through hours of debugging and studying how enterprise-level tracking systems work to ensure the school's data remains organized and professional."</p>
+          </div>
+        </div>
+
+        <div class="qa-item">
+          <button onclick="toggleQA(8)" class="qa-btn">
+            <span>5. What skills did you use the most?</span>
+            <span id="icon-8" class="qa-icon">+</span>
+          </button>
+          <div id="ans-8" class="qa-content">
+            <p>"On the technical side, I utilized a modern stack including HTML5, Tailwind CSS for responsive design, JavaScript (ES6+) for logic, and MySQL for robust data management. However, 'Soft Skills' were just as vital. I heavily relied on Technical Communication. I had to act as a Project Manager—regularly updating the school leadership on our milestones, explaining technical roadblocks in simple terms, and managing expectations regarding deadlines and feature launches."</p>
+          </div>
+        </div>
+
+          <div class="qa-item">
+          <button onclick="toggleQA(9)" class="qa-btn">
+            <span>6. What new things did you learn?</span>
+            <span id="icon-9" class="qa-icon">+</span>
+          </button>
+          <div id="ans-9" class="qa-content">
+            <p>"This project demystified the 'black box' of online systems for me. I finally moved from asking 'how does an application process work?' to actually building one from scratch. I learned about Full-Stack Architecture—how the user interface (Frontend) talks to the database (Backend). Most importantly, I learned that coding is only 50% of the job; the other 50% is understanding user needs and ensuring the system is intuitive for people who aren't tech-savvy."</p>
+          </div>
+        </div>
+
+        <div class="qa-item">
+          <button onclick="toggleQA(10)" class="qa-btn">
+            <span>7. Advice for future tech learners?</span>
+            <span id="icon-10" class="qa-icon">+</span>
+          </button>
+          <div id="ans-10" class="qa-content">
+            <p>"My biggest piece of advice is this: Do not let external factors—like not having a background in CAT or never having coded before—make you feel like tech isn't for you. I started where you are. If you have the passion and the curiosity, that is your 'entry ticket.' In the tech world, your willingness to learn matters more than what you knew yesterday. As Bjarne Stroustrup once said: 'Design and programming are human activities; forget that and all is lost.' If you want to solve human problems, you belong in tech. Go for it with everything you have."</p>
+          </div>
+        </div>
+         
+          <div class="qa-item">
+          <button onclick="toggleQA(11)" class="qa-btn">
+            <span>8. How can learners develop skills in school?</span>
+            <span id="icon-11" class="qa-icon">+</span>
+          </button>
+          <div id="ans-11" class="qa-content">
+            <p>"You have to realize that the resources you need are already at your fingertips. Don’t wait for a formal class; use your time outside of school to explore. There are countless free platforms and apps where you can master the basics of logic and syntax. Start small, get comfortable, and then challenge yourself to build something real. Also, keep your eyes on the horizon: AI is no longer the future—it is the present. Pay attention to how AI is changing the world and learn how to use it as a tool."</p>
+          </div>
+        </div>
+
+        <div class="bg-blue-600 text-white rounded-[2rem] p-10 mt-12 shadow-xl shadow-blue-100">
+          <h3 class="text-2xl font-black mb-4">14. Final Message</h3>
+          <p class="text-lg leading-relaxed mb-6 italic">"To the learners: Your current circumstances are just your starting point, not your destination. To the teachers and staff: Thank you for fostering an environment where a boy from Hoye could dream of building systems for the world. I built this portal as a gift to my home, but I hope it serves as a reminder that we are capable of excellence. Stay disciplined, stay curious, and remember—Success is a habit, not an act. Hoye to the world!"</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.qa-item { border-radius: 20px; border: 1px solid #f1f5f9; background: #f8fafc; transition: all 0.3s ease; overflow: hidden; }
+.qa-item:hover { border-color: #2563eb; background: #fff; }
+.qa-btn { width: 100%; padding: 24px; text-align: left; font-weight: 800; color: #1e293b; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+.qa-content { display: none; padding: 0 24px 24px; color: #475569; line-height: 1.8; font-size: 1.05rem; }
+.qa-icon { font-size: 1.5rem; color: #94a3b8; transition: transform 0.3s ease; }
+.qa-item.active .qa-content { display: block; }
+.qa-item.active .qa-icon { transform: rotate(45deg); color: #2563eb; }
+</style>
+
+<script>
+function toggleQA(id) {
+  const content = document.getElementById("ans-" + id);
+  const item = content.parentElement;
+  item.classList.toggle('active');
+}
+</script>
 </section>
 <section id="announcements" class="page py-24 bg-white relative overflow-hidden">
 
@@ -1643,7 +1845,37 @@
       </p>
       <div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
     </div>
+<div class="text-center mt-6">
+ <div class="max-w-2xl mx-auto mb-12 px-4">
+  <div class="relative group p-[1px] rounded-2xl bg-gradient-to-r from-slate-200 via-primary/20 to-slate-200">
+    <div class="bg-white/80 backdrop-blur-xl rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 border border-white/20 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-1">
+      
+      <div class="flex items-center gap-4">
+        <div class="relative flex-shrink-0">
+          <div class="absolute inset-0 bg-primary/20 rounded-full animate-ping"></div>
+          <div class="relative bg-primary/10 p-3 rounded-full text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+              <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+            </svg>
+          </div>
+        </div>
+    <div id="notification-section" class="flex flex-col md:flex-row items-center justify-between gap-4 p-6 bg-white rounded-2xl shadow-sm border border-slate-100">
+  <div class="flex items-center gap-4">
+    <div class="text-left">
+      <h4 class="text-slate-900 font-bold text-lg leading-tight">Live School Updates</h4>
+      <p class="text-slate-500 text-sm">Get notified instantly about closing dates & results.</p>
+    </div>
+  </div>
 
+  <button 
+    onclick="subscribeToSchoolAlerts()" 
+    class="w-full md:w-auto px-8 py-3 bg-slate-900 text-white text-sm font-bold rounded-xl hover:bg-primary transition-colors duration-300 shadow-lg shadow-slate-200 active:scale-95">
+    Enable Notifications
+  </button>
+</div>
+  </div>
+</div>
     <!-- Announcement Cards Grid -->
     <div class="grid gap-8 justify-center">
    <!-- Announcement: LinkedIn Launch -->
@@ -1912,29 +2144,83 @@
 
 </section>
 
-    <footer class="site-footer bg-slate-50 border-t border-slate-200">
+<footer class="site-footer bg-slate-50 border-t border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+
+    <div class="grid md:grid-cols-3 gap-10 items-start">
+
+      <!-- LEFT -->
       <div class="flex items-center gap-6">
         <a href="#" class="flex-shrink-0 group">
           <div class="relative">
-            <img src="images/school.jpg" alt="Hoye secondary school Logo" class="h-16 w-auto rounded-xl transition-transform group-hover:scale-110 duration-300">
+            <img src="images/school.jpg" alt="Hoye Secondary School Logo"
+              class="h-16 w-auto rounded-xl transition-transform group-hover:scale-110 duration-300">
             <div class="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </div>
         </a>
+
         <div>
-          <div class="font-bold text-xl text-slate-900 mb-1">Hoye Secondary School</div>
-          <div class="text-sm text-slate-600">© Hoye Secondry School 2026</div>
+          <div class="font-bold text-xl text-slate-900 mb-1">
+            Hoye Secondary School
+          </div>
+          <div class="text-sm text-slate-600">
+            © 2026 All Rights Reserved
+          </div>
         </div>
       </div>
+
+      <!-- CENTER -->
+      <div class="text-center md:text-left space-y-4">
+
+        <div class="font-semibold text-slate-900">
+          Contact Information
+        </div>
+
+        <div class="flex items-center gap-3 text-slate-600 text-sm justify-center md:justify-start">
+          <i data-lucide="phone" class="w-4 h-4 text-primary"></i>
+          <span>072 307 1712</span>
+        </div>
+
+        <div class="flex items-center gap-3 text-slate-600 text-sm justify-center md:justify-start">
+          <i data-lucide="mail" class="w-4 h-4 text-primary"></i>
+          <span>hoye.sec@gmail.com</span>
+        </div>
+
+        <div class="flex items-start gap-3 text-slate-600 text-sm justify-center md:justify-start">
+          <i data-lucide="map-pin" class="w-4 h-4 text-primary mt-1"></i>
+          <span>
+            Private Bag X1646<br>
+            Bergville<br>
+            3350
+          </span>
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
       <div class="text-center md:text-right">
-        <div class="text-sm text-slate-600 mb-2">Success Through Education</div>
-        <div class="flex items-center justify-center md:justify-end gap-2">
+
+        <div class="text-sm text-slate-600 mb-3">
+          Success Through Education
+        </div>
+
+        <a href="https://www.linkedin.com/company/hoye-secondary-school/"
+           target="_blank"
+           class="inline-flex items-center gap-2 text-primary font-semibold hover:underline text-sm">
+
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          Visit our LinkedIn →
+        </a>
+
+        <div class="flex items-center justify-center md:justify-end gap-2 mt-4">
           <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
           <span class="text-xs text-slate-500">SKAVS</span>
         </div>
+
       </div>
+
     </div>
+
   </div>
 </footer>
    <script>
@@ -2235,5 +2521,84 @@ document.addEventListener("DOMContentLoaded", function () {
 <script>
     (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...args)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Rfstd3-hz7B7XfCU992Jw";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
     </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+  lucide.createIcons();
+</script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+  import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-messaging.js";
+  import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyC04fhzQlRgrkB-3yJ_sxVPCacUhX3CvQA",
+    authDomain: "hoye-secondary-alerts.firebaseapp.com",
+    projectId: "hoye-secondary-alerts",
+    storageBucket: "hoye-secondary-alerts.firebasestorage.app",
+    messagingSenderId: "40366068065",
+    appId: "1:40366068065:web:2fe5002647c4768eb93520"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const messaging = getMessaging(app);
+  const db = getFirestore(app); // Initialize Database
+
+  window.subscribeToSchoolAlerts = async function() {
+    // Beautiful "Loading" state
+    Swal.fire({
+      title: 'Connecting...',
+      text: 'Linking to Hoye Alert System',
+      allowOutsideClick: false,
+      didOpen: () => { Swal.showLoading() }
+    });
+document.getElementById('notification-section').style.display = 'none';
+    try {
+      const permission = await Notification.requestPermission();
+
+      if (permission === "granted") {
+        const registration = await navigator.serviceWorker.register('./firebase-messaging-sw.js');
+        const token = await getToken(messaging, { 
+          vapidKey: 'BCZDh2yHsM2R93rJtH0Ig3b5XxL4R3Ur8V0_Is8Q_VKyz1DSDfzNahUsKVGMIRlTvWGsmqNG96Mt2oRmMaEFkg8',
+          serviceWorkerRegistration: registration
+        });
+        // Check if they are already subscribed when the page loads
+const checkStatus = () => {
+  if (Notification.permission === 'granted') {
+    const section = document.getElementById('notification-section');
+section.classList.add('opacity-0', 'transition-opacity', 'duration-500');
+setTimeout(() => { section.style.display = 'none'; }, 500);
+    if (section) section.style.display = 'none';
+  }
+};
+
+// Run the check
+checkStatus();
+
+        if (token) {
+          // --- SAVE TO DATABASE ---
+          // This creates a "subscribers" collection and saves the token
+          await setDoc(doc(db, "subscribers", token), {
+            subscribedAt: new Date(),
+            device: navigator.userAgent
+          });
+
+          // SUCCESS POPUP (Clean & Professional)
+          Swal.fire({
+            icon: 'success',
+            title: 'System Linked!',
+            text: 'You will now receive official school alerts instantly.',
+            confirmButtonColor: '#1e293b', // Matches your slate-800 theme
+            timer: 3000
+          });
+        }
+      } else {
+        Swal.fire('Permission Denied', 'Please allow notifications to stay updated.', 'error');
+      }
+    } catch (error) {
+      console.error(error);
+      Swal.fire('Connection Error', 'Failed to link system. Check your internet.', 'error');
+    }
+  };
+</script>
 </body>
 </html>
