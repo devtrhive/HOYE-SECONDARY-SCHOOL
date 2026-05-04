@@ -1845,37 +1845,7 @@ function toggleQA(id) {
       </p>
       <div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
     </div>
-<div class="text-center mt-6">
- <div class="max-w-2xl mx-auto mb-12 px-4">
-  <div class="relative group p-[1px] rounded-2xl bg-gradient-to-r from-slate-200 via-primary/20 to-slate-200">
-    <div class="bg-white/80 backdrop-blur-xl rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 border border-white/20 shadow-sm transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-1">
-      
-      <div class="flex items-center gap-4">
-        <div class="relative flex-shrink-0">
-          <div class="absolute inset-0 bg-primary/20 rounded-full animate-ping"></div>
-          <div class="relative bg-primary/10 p-3 rounded-full text-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
-              <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
-            </svg>
-          </div>
-        </div>
-    <div id="notification-section" class="flex flex-col md:flex-row items-center justify-between gap-4 p-6 bg-white rounded-2xl shadow-sm border border-slate-100">
-  <div class="flex items-center gap-4">
-    <div class="text-left">
-      <h4 class="text-slate-900 font-bold text-lg leading-tight">Live School Updates</h4>
-      <p class="text-slate-500 text-sm">Get notified instantly about closing dates & results.</p>
-    </div>
-  </div>
 
-  <button 
-    onclick="subscribeToSchoolAlerts()" 
-    class="w-full md:w-auto px-8 py-3 bg-slate-900 text-white text-sm font-bold rounded-xl hover:bg-primary transition-colors duration-300 shadow-lg shadow-slate-200 active:scale-95">
-    Enable Notifications
-  </button>
-</div>
-  </div>
-</div>
     <!-- Announcement Cards Grid -->
     <div class="grid gap-8 justify-center">
    <!-- Announcement: LinkedIn Launch -->
@@ -2524,81 +2494,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
   lucide.createIcons();
-</script>
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
-  import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-messaging.js";
-  import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-firestore.js";
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyC04fhzQlRgrkB-3yJ_sxVPCacUhX3CvQA",
-    authDomain: "hoye-secondary-alerts.firebaseapp.com",
-    projectId: "hoye-secondary-alerts",
-    storageBucket: "hoye-secondary-alerts.firebasestorage.app",
-    messagingSenderId: "40366068065",
-    appId: "1:40366068065:web:2fe5002647c4768eb93520"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const messaging = getMessaging(app);
-  const db = getFirestore(app); // Initialize Database
-
-  window.subscribeToSchoolAlerts = async function() {
-    // Beautiful "Loading" state
-    Swal.fire({
-      title: 'Connecting...',
-      text: 'Linking to Hoye Alert System',
-      allowOutsideClick: false,
-      didOpen: () => { Swal.showLoading() }
-    });
-document.getElementById('notification-section').style.display = 'none';
-    try {
-      const permission = await Notification.requestPermission();
-
-      if (permission === "granted") {
-        const registration = await navigator.serviceWorker.register('./firebase-messaging-sw.js');
-        const token = await getToken(messaging, { 
-          vapidKey: 'BCZDh2yHsM2R93rJtH0Ig3b5XxL4R3Ur8V0_Is8Q_VKyz1DSDfzNahUsKVGMIRlTvWGsmqNG96Mt2oRmMaEFkg8',
-          serviceWorkerRegistration: registration
-        });
-        // Check if they are already subscribed when the page loads
-const checkStatus = () => {
-  if (Notification.permission === 'granted') {
-    const section = document.getElementById('notification-section');
-section.classList.add('opacity-0', 'transition-opacity', 'duration-500');
-setTimeout(() => { section.style.display = 'none'; }, 500);
-    if (section) section.style.display = 'none';
-  }
-};
-
-// Run the check
-checkStatus();
-
-        if (token) {
-          // --- SAVE TO DATABASE ---
-          // This creates a "subscribers" collection and saves the token
-          await setDoc(doc(db, "subscribers", token), {
-            subscribedAt: new Date(),
-            device: navigator.userAgent
-          });
-
-          // SUCCESS POPUP (Clean & Professional)
-          Swal.fire({
-            icon: 'success',
-            title: 'System Linked!',
-            text: 'You will now receive official school alerts instantly.',
-            confirmButtonColor: '#1e293b', // Matches your slate-800 theme
-            timer: 3000
-          });
-        }
-      } else {
-        Swal.fire('Permission Denied', 'Please allow notifications to stay updated.', 'error');
-      }
-    } catch (error) {
-      console.error(error);
-      Swal.fire('Connection Error', 'Failed to link system. Check your internet.', 'error');
-    }
-  };
 </script>
 </body>
 </html>
