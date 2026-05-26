@@ -26,7 +26,7 @@
     <div class="progress-bar" id="progressBar"></div>
 </div>
 <div class='content'>
-<form id='admissionForm'>
+<form id="admissionForm" method="POST" enctype="multipart/form-data">
 <section class="form-section" id="step1">
 
 <h2 class="section-title">1. Learner Information</h2>
@@ -49,37 +49,37 @@ Please complete all learner details exactly as they appear on official documents
 
 <div class="field">
 <label>Middle Name(s)</label>
-<input type="text">
+<input type="text" name="middle_name">
 </div>
 
 <div class="field">
 <label>Preferred Name / Nickname</label>
-<input type="text">
+<input type="text" name="preferred_name">
 </div>
 
 <div class="field">
 <label>ID / Passport Number *</label>
-<input type="text" required>
+<input type="text" name="id_number" required>
 </div>
 
 <div class="field">
 <label>Birth Certificate Number</label>
-<input type="text">
+<input type="text" name="birth_cert_number">
 </div>
 
 <div class="field">
 <label>Date of Birth *</label>
-<input type="date" required>
+<input type="date" name="dob" required>
 </div>
 
 <div class="field">
 <label>Age *</label>
-<input type="number" min="10" max="25">
+<input type="number" name="age" required>
 </div>
 
 <div class="field">
 <label>Gender *</label>
-<select required>
+<select name="gender" required>
 <option value="">Select</option>
 <option>Male</option>
 <option>Female</option>
@@ -88,33 +88,33 @@ Please complete all learner details exactly as they appear on official documents
 
 <div class="field">
 <label>Nationality *</label>
-<input type="text" required>
+<input type="text" name="nationality" required>
 </div>
 
 <div class="field">
 <label>Citizenship</label>
-<input type="text">
+<input type="text" name="citizenship">
 </div>
 
 <div class="field">
 <label>Country of Birth</label>
-<input type="text">
+<input type="text" name="country_of_birth">
 </div>
 
 <!-- LANGUAGE -->
 <div class="field">
 <label>Home Language *</label>
-<input type="text name="language" required>
+<input type="text" name="home_language" required>
 </div>
 
 <div class="field">
 <label>Second Language</label>
-<input type="text">
+<input type="text" name="second_language">
 </div>
 
 <div class="field">
 <label>Preferred Language of Learning</label>
-<select>
+<select name="learning_language">
 <option value="">Select</option>
 <option>English</option>
 <option>Xitsonga</option>
@@ -128,7 +128,7 @@ Please complete all learner details exactly as they appear on official documents
 
 <div class="field">
 <label>Religion</label>
-<input type="text">
+<input type="text" name="religion">
 </div>
 
 <!-- CONTACT -->
@@ -145,33 +145,33 @@ Please complete all learner details exactly as they appear on official documents
 <!-- ADDRESS -->
 <div class="field full">
 <label>Residential Address *</label>
-<textarea required></textarea>
+<textarea name="residential_address" required></textarea>
 </div>
 
 <div class="field">
 <label>Town / City *</label>
-<input type="text" required>
+<input type="text" name="city" required>
 </div>
 
 <div class="field">
 <label>Province / State *</label>
-<input type="text" required>
+<input type="text" name="province" required>
 </div>
 
 <div class="field">
 <label>Postal Code</label>
-<input type="text">
+<input type="text" name="postal_code">
 </div>
 
 <div class="field">
 <label>Country *</label>
-<input type="text" required>
+<input type="text" name="country" required>
 </div>
 
 <!-- FAMILY -->
 <div class="field">
 <label>Lives With</label>
-<select>
+<select name="lives_with">
 <option value="">Select</option>
 <option>Mother</option>
 <option>Father</option>
@@ -184,12 +184,12 @@ Please complete all learner details exactly as they appear on official documents
 
 <div class="field">
 <label>Number of Siblings</label>
-<input type="number" min="0">
+<input type="number" name="total_siblings">
 </div>
 
 <div class="field">
 <label>Position in Family</label>
-<select>
+<select name="family_position">
 <option value="">Select</option>
 <option>First Born</option>
 <option>Middle Child</option>
@@ -328,7 +328,7 @@ Please provide accurate academic history, previous school records and learner st
 
 <div class="field">
 <label>Preferred Start Year *</label>
-<input type="number" placeholder="2027" required>
+<input type="number" name="start_year" placeholder="2027" required>
 </div>
 
 <div class="field">
@@ -338,59 +338,59 @@ Please provide accurate academic history, previous school records and learner st
 
 <div class="field">
 <label>Year Passed *</label>
-<input type="number" required>
+<input type="number" name="year_passed_highest" required>
 </div>
 
 <div class="field">
 <label>Current Grade</label>
-<input type="text">
+<input type="text" name="current_grade">
 </div>
 
 <div class="field">
 <label>Current Academic Year</label>
-<input type="number">
+<input type="number" name="current_academic_year">
 </div>
 
 <!-- PREVIOUS SCHOOL -->
 <div class="field full">
 <label>Previous School Name *</label>
-<input type="text" required>
+<input type="text" name="prev_school_name" required>
 </div>
 
 <div class="field full">
 <label>Previous School Address</label>
-<textarea></textarea>
+<textarea name="prev_school_address"></textarea>
 </div>
 
 <div class="field">
 <label>Previous School Contact Number</label>
-<input type="tel">
+<input type="tel" name="prev_school_phone">
 </div>
 
 <div class="field">
 <label>Reason for Leaving Previous School</label>
-<input type="text">
+<input type="text" name="reason_leaving">
 </div>
 
 <!-- PERFORMANCE -->
 <div class="field">
 <label>Average Percentage / Grade</label>
-<input type="text" placeholder="e.g 72%">
+<input type="text" name="average_percentage">
 </div>
 
 <div class="field">
 <label>Best Subject</label>
-<input type="text">
+<input type="text" name="best_subject">
 </div>
 
 <div class="field">
 <label>Weakest Subject</label>
-<input type="text">
+<input type="text" name="weakest_subject">
 </div>
 
 <div class="field">
 <label>Number of Subjects Passed</label>
-<input type="number">
+<input type="number" name="num_subjects_passed">
 </div>
 
 <!-- REPLACE YOUR GRADE + STREAM SECTION WITH THIS -->
@@ -412,7 +412,7 @@ Please provide accurate academic history, previous school records and learner st
 <!-- STREAM FOR SENIOR PHASE -->
 <div class="field" id="streamBox" style="display:none;">
 <label>Choose Stream *</label>
-<select id="streamSelect" onchange="loadSubjects()">
+<select id="streamSelect" name="chosen_stream" onchange="loadSubjects()">
 <option value="">Select Stream</option>
 <option value="physics">Physics</option>
 <option value="history">History</option>
@@ -528,13 +528,13 @@ function loadSubjects() {
 
 <div class="field">
 <label>Preferred Optional Subject</label>
-<input type="text">
+<input type="text" name="optional_subject">
 </div>
 
 <!-- SUPPORT -->
 <div class="field">
 <label>Needs Academic Support?</label>
-<select>
+<select name="needs_support">
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -542,7 +542,7 @@ function loadSubjects() {
 
 <div class="field">
 <label>Requires Extra Lessons?</label>
-<select>
+<select name="needs_extra_lessons">
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -551,28 +551,28 @@ function loadSubjects() {
 <!-- ACTIVITIES -->
 <div class="field full">
 <label>Achievements / Awards</label>
-<textarea placeholder="Academic prizes, certificates, medals etc"></textarea>
+<textarea name="achievements"></textarea>
 </div>
 
 <div class="field full">
 <label>Sports Participation</label>
-<textarea placeholder="Football, Netball, Athletics etc"></textarea>
+<textarea name="sports_participation"></textarea>
 </div>
 
 <div class="field full">
 <label>Leadership Roles</label>
-<textarea placeholder="Prefect, Captain, Monitor etc"></textarea>
+<textarea name="leadership_roles"></textarea>
 </div>
 
 <div class="field full">
 <label>Clubs / Talents / Extracurricular Activities</label>
-<textarea placeholder="Debate, Choir, Coding, Drama etc"></textarea>
+<textarea name="extracurricular"></textarea>
 </div>
 
 <!-- DISCIPLINE -->
 <div class="field">
 <label>Any Suspensions / Discipline Cases?</label>
-<select id="disciplineSelect" onchange="toggleDisciplineReason()">
+<select name="has_discipline_history" id="disciplineSelect">
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -580,7 +580,7 @@ function loadSubjects() {
 
 <div class="field" id="disciplineReasonBox" style="display:none;">
 <label>If Yes, Explain</label>
-<input type="text">
+<input type="text" name="discipline_details">
 </div>
 
 </div>
@@ -589,16 +589,13 @@ function loadSubjects() {
 <!-- WHY JOIN HOYE -->
 <div class="field full">
 <label>Why do you want to join Hoye Secondary School? *</label>
-<textarea 
-required
-placeholder="Tell us why you would like to study at Hoye Secondary School, your goals, and what attracts you to the school.">
-</textarea>
+<textarea name="motivation_to_join" required></textarea>
 </div>
 
 <!-- HOW DID YOU HEAR ABOUT US -->
 <div class="field">
 <label>How did you hear about Hoye Secondary School? *</label>
-<select required>
+<select name="referral_source" required>
 <option value="">Select Option</option>
 <option>Facebook</option>
 <option>Instagram</option>
@@ -621,7 +618,7 @@ placeholder="Tell us why you would like to study at Hoye Secondary School, your 
 <!-- RELATED TEACHER -->
 <div class="field">
 <label>Do you have any teacher related to you?</label>
-<select id="relatedTeacherSelect" onchange="toggleTeacherRelative()">
+<select name="has_teacher_relative" id="relatedTeacherSelect">
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -659,12 +656,12 @@ margin-top:10px;
 
 <div class="field">
 <label>Relationship to Learner</label>
-<input type="text" placeholder="Uncle, Aunt, Parent etc">
+<input type="text" name="teacher_relationship">
 </div>
 
 <div class="field">
 <label>Department / Subject (Optional)</label>
-<input type="text">
+<input type="text" name="teacher_department">
 </div>
 
 </div>
@@ -686,7 +683,7 @@ function toggleTeacherRelative() {
         box.style.display = "none";
     }
 }
-</script>`                                                                                                                                              `
+</script>                                                                                                                                             `
 
 <div class="nav">
 <button class="btn secondary" type="button" onclick="nextPrev(-1)">
@@ -730,7 +727,7 @@ Please provide full medical, wellness and learner support details. This helps th
 
 <div class="field">
 <label>Does the learner have Medical Aid?</label>
-<select id="medicalAidSelect" onchange="toggleMedicalAidSection()">
+<select name="has_medical_aid" id="medicalAidSelect" ...>
 <option value="No">No</option>
 <option value="Yes">Yes</option>
 </select>
@@ -738,7 +735,7 @@ Please provide full medical, wellness and learner support details. This helps th
 
 <div class="field">
 <label>Does the learner have a Family Doctor?</label>
-<select id="doctorSelect" onchange="toggleDoctorSection()">
+<select name="has_family_doctor" id="doctorSelect" ...>
 <option value="No">No</option>
 <option value="Yes">Yes</option>
 </select>
@@ -764,22 +761,22 @@ margin-top:10px;
 
 <div class="field">
 <label>Medical Aid Provider</label>
-<input type="text">
+<input type="text" name="med_aid_provider">
 </div>
 
 <div class="field">
 <label>Medical Aid Number</label>
-<input type="text">
+<input type="text" name="med_aid_number">
 </div>
 
 <div class="field">
 <label>Main Member Name</label>
-<input type="text">
+<input type="text" name="med_aid_member">
 </div>
 
 <div class="field">
 <label>Main Member ID Number</label>
-<input type="text">
+<input type="text" name="med_aid_member_id">
 </div>
 
 <div class="field">
@@ -816,12 +813,12 @@ margin-top:10px;
 
 <div class="field">
 <label>Family Doctor Name</label>
-<input type="text">
+<input type="text" name="doctor_name">
 </div>
 
 <div class="field">
 <label>Doctor Phone Number</label>
-<input type="tel">
+<input type="tel" name="doctor_phone">
 </div>
 
 <div class="field full">
@@ -880,12 +877,12 @@ section.style.display = "none";
 <!-- EMERGENCY -->
 <div class="field">
 <label>Emergency Contact Name *</label>
-<input type="text"  required>
+<input type="text" name="emergency_name" required>
 </div>
 
 <div class="field">
 <label>Emergency Contact Number *</label>
-<input type="tel" required>
+<input type="tel" name="emergency_phone" required>
 </div>
 
 <div class="field">
@@ -920,17 +917,17 @@ section.style.display = "none";
 <!-- HEALTH -->
 <div class="field full">
 <label>Known Allergies</label>
-<textarea placeholder="Food allergies, medication allergies, bee stings, dust etc"></textarea>
+<textarea name="medical_allergies"></textarea>
 </div>
 
 <div class="field full">
 <label>Current Medical Conditions</label>
-<textarea placeholder="Asthma, epilepsy, diabetes, heart condition etc"></textarea>
+<textarea name="medical_conditions"></textarea>
 </div>
 
 <div class="field full">
 <label>Current Medication</label>
-<textarea placeholder="List medication learner currently uses"></textarea>
+<textarea name="current_medication"></textarea>
 </div>
 
 <div class="field full">
@@ -941,7 +938,7 @@ section.style.display = "none";
 <!-- SPECIAL SUPPORT -->
 <div class="field">
 <label>Does learner have asthma?</label>
-<select>
+<select name="med_asthma">
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -949,7 +946,7 @@ section.style.display = "none";
 
 <div class="field">
 <label>Does learner have epilepsy?</label>
-<select>
+<select name="med_epilepsy">
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -957,7 +954,7 @@ section.style.display = "none";
 
 <div class="field">
 <label>Does learner have diabetes?</label>
-<select>
+<select name="med_diabetes">
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -965,7 +962,7 @@ section.style.display = "none";
 
 <div class="field">
 <label>Any disability / physical limitation?</label>
-<select id="disabilitySelect" onchange="toggleDisabilityBox()">
+<select name="has_disability" id="disabilitySelect" ...>
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -973,13 +970,13 @@ section.style.display = "none";
 
 <div class="field full" id="disabilityBox" style="display:none;">
 <label>If Yes, Explain Disability / Support Needed</label>
-<textarea></textarea>
+<textarea name="disability_details"></textarea>
 </div>
 
 <!-- MENTAL / LEARNING SUPPORT -->
 <div class="field">
 <label>Requires counselling support?</label>
-<select>
+<select name="needs_counselling">
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -1003,7 +1000,7 @@ section.style.display = "none";
 
 <div class="field">
 <label>Vision Problems?</label>
-<select>
+<select name="vision_problems">
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -1019,7 +1016,7 @@ section.style.display = "none";
 
 <div class="field">
 <label>Dexterity</label>
-<select>
+<select name="hand_dominance">
 <option>Right Handed</option>
 <option>Left Handed</option>
 <option>Ambidextrous</option>
@@ -1029,7 +1026,7 @@ section.style.display = "none";
 <!-- SPORTS -->
 <div class="field">
 <label>Allowed to Participate in Sports?</label>
-<select>
+<select name="sports_allowed">
 <option>Yes</option>
 <option>No</option>
 </select>
@@ -1043,7 +1040,7 @@ section.style.display = "none";
 <!-- PERMISSION -->
 <div class="field">
 <label>Allow emergency treatment if needed?</label>
-<select>
+<select name="allow_emergency_treatment">
 <option>Yes</option>
 <option>No</option>
 </select>
@@ -1108,22 +1105,22 @@ Please provide complete parent / guardian information. This helps the school wit
 <!-- PRIMARY GUARDIAN -->
 <div class="field">
 <label>Full Name *</label>
-<input type="text" required>
+<input type="text" name="guardian_first_name" required>>
 </div>
 
 <div class="field">
 <label>Surname *</label>
-<input type="text" required>
+<input type="text" name="guardian_last_name" required>
 </div>
 
 <div class="field">
 <label>ID / Passport Number *</label>
-<input type="text" required>
+<input type="text" name="guardian_id" required>
 </div>
 
 <div class="field">
 <label>Relationship to Learner *</label>
-<select required>
+<select name="guardian_relationship" required>
 <option value="">Select</option>
 <option>Mother</option>
 <option>Father</option>
@@ -1145,7 +1142,7 @@ Please provide complete parent / guardian information. This helps the school wit
 
 <div class="field">
 <label>Marital Status</label>
-<select>
+<select name="guardian_marital_status">
 <option value="">Select</option>
 <option>Single</option>
 <option>Married</option>
@@ -1171,24 +1168,24 @@ Please provide complete parent / guardian information. This helps the school wit
 
 <div class="field">
 <label>Alternative Phone Number</label>
-<input type="tel">
+<input type="tel" name="guardian_alt_phone">
 </div>
 
 <div class="field">
 <label>WhatsApp Number</label>
-<input type="tel">
+<input type="tel" name="guardian_whatsapp">
 </div>
 
 <div class="field">
 <label>Email Address</label>
-<input type="email">
+<input type="email" name="guardian_email">
 </div>
 
 <!-- EMPLOYMENT STATUS -->
 
 <div class="field">
 <label>Employment Status *</label>
-<select id="employmentStatus" onchange="toggleEmploymentFields()" required>
+<select name="guardian_employment_status" id="employmentStatus" ...>
 <option value="">Select</option>
 <option value="employed">Employed</option>
 <option value="self-employed">Self Employed</option>
@@ -1231,12 +1228,12 @@ margin-top:10px;
 
 <div class="field">
 <label>Occupation *</label>
-<input type="text">
+<input type="text" name="guardian_occupation">
 </div>
 
 <div class="field">
 <label>Employer / Company Name *</label>
-<input type="text">
+<input type="text" name="guardian_employer">
 </div>
 
 <div class="field">
@@ -1261,7 +1258,7 @@ margin-top:10px;
 
 <div class="field full">
 <label>Work Address *</label>
-<textarea></textarea>
+<textarea name="guardian_work_address"></textarea>
 </div>
 
 <div class="field">
@@ -1292,7 +1289,7 @@ margin-top:10px;
 
 <div class="field">
 <label>Monthly Income Range</label>
-<select>
+<select name="guardian_income_range">
 <option value="">Select</option>
 <option>Below R3 000</option>
 <option>R3 000 - R7 000</option>
@@ -1340,7 +1337,7 @@ box.style.display = "none";
 <!-- ADDRESS -->
 <div class="field full">
 <label>Home Address *</label>
-<textarea required></textarea>
+<textarea name="guardian_home_address" required></textarea>
 </div>
 
 <div class="field">
@@ -1366,7 +1363,7 @@ box.style.display = "none";
 <!-- SECOND PARENT -->
 <div class="field">
 <label>Is There Another Parent / Guardian?</label>
-<select id="secondGuardianSelect" onchange="toggleSecondGuardian()">
+<select name="has_second_guardian" id="secondGuardianSelect" ...>
 <option>No</option>
 <option>Yes</option>
 </select>
@@ -1399,7 +1396,7 @@ margin-top:10px;
 
 <div class="field">
 <label>Full Name</label>
-<input type="text">
+<input type="text" name="guardian2_name">
 </div>
 
 <div class="field">
@@ -1409,7 +1406,7 @@ margin-top:10px;
 
 <div class="field">
 <label>Phone Number</label>
-<input type="tel">
+<input type="tel" name="guardian2_phone">
 </div>
 
 <div class="field">
@@ -1445,7 +1442,7 @@ margin-top:10px;
 
 <div class="field">
 <label>May learner appear in school photos / media?</label>
-<select>
+<select name="permission_photos">
 <option>Yes</option>
 <option>No</option>
 </select>
@@ -1453,7 +1450,7 @@ margin-top:10px;
 
 <div class="field full">
 <label>Additional Notes for School</label>
-<textarea placeholder="Any custody arrangements, communication notes, family matters etc"></textarea>
+<textarea name="guardian_notes"></textarea>
 </div>
 
 </div>
@@ -1527,12 +1524,12 @@ Please upload clear and readable certified documents where required. Incomplete 
 
 <div class="field full">
 <label>Additional Notes</label>
-<textarea placeholder="Any important information you would like admissions to know"></textarea>
+<textarea name="final_submission_notes"></textarea>
 </div>
 
 <div class="field">
 <label>I confirm all information is true *</label>
-<select required>
+<select name="confirm_truth" required>
 <option value="">Select</option>
 <option>Yes</option>
 <option>No</option>
@@ -1541,7 +1538,7 @@ Please upload clear and readable certified documents where required. Incomplete 
 
 <div class="field">
 <label>I agree to school policies *</label>
-<select required>
+<select name="agree_policies" required>
 <option value="">Select</option>
 <option>Yes</option>
 <option>No</option>
@@ -1550,12 +1547,12 @@ Please upload clear and readable certified documents where required. Incomplete 
 
 <div class="field full">
 <label>Parent / Guardian Full Name (Digital Signature) *</label>
-<input type="text" required placeholder="Type full legal name">
+<input type="text" name="digital_signature" required>
 </div>
 
 <div class="field">
 <label>Date *</label>
-<input type="date" required>
+<input type="date" name="submission_date_confirmed" required>
 </div>
 
 
@@ -1581,20 +1578,87 @@ function showStep(n) {
 }
 
 function nextPrev(n) {
-    // Check if we are moving forward from the last step
+    // 1. RUN COMPLIANCE FILTER ON FORWARD OPERATIONS
+    if (n === 1) {
+        var currentStepContainer = steps[currentStep]; 
+        var requiredInputs = currentStepContainer.querySelectorAll('input[required], textarea[required], select[required]');
+        var isValid = true;
+
+        requiredInputs.forEach(function(input) {
+            // Evaluates text boxes, empty textareas, and default unselected state options
+            if (!input.value.trim() || input.value === "Select") {
+                isValid = false;
+                
+                // Keep your gorgeous styling here
+                input.style.border = "2px solid #ef4444";
+                input.style.backgroundColor = "#fef2f2";
+            } else {
+                // Clear errors on valid entries
+                input.style.border = "";
+                input.style.backgroundColor = "";
+            }
+        });
+
+        // If data validation criteria fails, intercept execution path right here
+        if (!isValid) {
+            showPremiumAlert(); // FIRE NEW MODERN TOAST DISPLAY ENGINE
+            
+            // Focus on the first invalid field
+            for (var i = 0; i < requiredInputs.length; i++) {
+                if (!requiredInputs[i].value.trim() || requiredInputs[i].value === "Select") {
+                    requiredInputs[i].focus();
+                    break;
+                }
+            }
+            return false; // Stalls step advancement completely
+        }
+    }
+
+    // 2. BACKEND COMPILATION & FORWARD STEPS TRACKING ROUTE
     if (n === 1 && currentStep === steps.length - 1) {
         console.log("Submit clicked - Starting PDF generation...");
-        generatePDF(); // Run the PDF function instead of submitting
+        generatePDF(); 
         return; 
     }
 
     currentStep += n;
     
-    // Safety boundaries
     if (currentStep < 0) currentStep = 0;
     if (currentStep >= steps.length) currentStep = steps.length - 1;
 
     showStep(currentStep);
+}
+
+// PREMIUM TOAST CONTROLLER DRIVERS
+function showPremiumAlert() {
+    const toast = document.getElementById('premiumAlertCard');
+    if (!toast) return;
+
+    // Reset visibility style attributes
+    toast.style.display = 'block';
+    
+    // Give execution thread 10ms to register display changes before animating transitions
+    setTimeout(() => {
+        toast.style.transform = 'translateX(0)';
+        toast.style.opacity = '1';
+    }, 10);
+
+    // Auto dismisses gracefully after 7 seconds if left unattended
+    setTimeout(closePremiumAlert, 7000);
+}
+
+function closePremiumAlert() {
+    const toast = document.getElementById('premiumAlertCard');
+    if (!toast) return;
+
+    // Slide back out to the right side of the window view port frame
+    toast.style.transform = 'translateX(50px)';
+    toast.style.opacity = '0';
+    
+    // Cleanly switch back display node structure after CSS transition completes
+    setTimeout(() => {
+        toast.style.display = 'none';
+    }, 400);
 }
 
 function updateProgress() {
@@ -1605,142 +1669,196 @@ function updateProgress() {
     document.getElementById("progressBar").style.width = percent + "%";
     document.getElementById("stepText").innerText = current + 1;
 }
+
 async function generatePDF() {
     const btn = document.getElementById("nextBtn");
+    const admissionForm = document.querySelector('form'); 
+    const tempBox = document.getElementById("permanentPdfTarget");
+    const processingModal = document.getElementById('processingModal');
+    const processingStatusText = document.getElementById('processingStatusText');
+    let statusTimer = null;
 
     try {
         btn.disabled = true;
         btn.innerText = "Processing...";
 
-        const form = document.getElementById("admissionForm");
-        const formData = new FormData(form);
-
-        /* CREATE TEMP VISIBLE PDF CONTAINER */
-        const temp = document.createElement("div");
-        temp.id = "tempPdfBox";
-
-        temp.style.position = "fixed";
-        temp.style.left = "0";
-        temp.style.top = "0";
-        temp.style.width = "800px";
-        temp.style.background = "white";
-        temp.style.color = "black";
-        temp.style.padding = "30px";
-        temp.style.zIndex = "9999";
-        temp.style.fontFamily = "Arial";
-        temp.style.fontSize = "12px";
-
-        let html = `
-            <h1 style="text-align:center;margin:0;">
-                HOYE SECONDARY SCHOOL
-            </h1>
-            <p style="text-align:center;margin:5px 0 20px;">
-                Student Application Form
-            </p>
-
-            <table style="
-                width:100%;
-                border-collapse:collapse;
-            ">
-        `;
-
-        for (const [key, value] of formData.entries()) {
-
-            if (value instanceof File && value.name === "") continue;
-
-            let label = key
-                .replace(/_/g, " ")
-                .replace(/\b\w/g, a => a.toUpperCase());
-
-            html += `
-                <tr>
-                    <td style="
-                        border:1px solid #ccc;
-                        padding:8px;
-                        width:40%;
-                        font-weight:bold;
-                    ">
-                        ${label}
-                    </td>
-
-                    <td style="
-                        border:1px solid #ccc;
-                        padding:8px;
-                    ">
-                        ${value}
-                    </td>
-                </tr>
-            `;
+        if (processingModal && processingStatusText) {
+            processingModal.style.display = 'flex';
+            
+            const phrases = [
+                "Assembling application profiles...",
+                "Validating verification data...",
+                "Generating secure tracking reference...",
+                "Compiling official enrollment record...",
+                "Saving profiles safely to database archive..."
+            ];
+            
+            let currentPhraseIndex = 0;
+            processingStatusText.innerText = phrases[currentPhraseIndex];
+            
+            statusTimer = setInterval(() => {
+                if (currentPhraseIndex < phrases.length - 1) {
+                    currentPhraseIndex++;
+                    processingStatusText.innerText = phrases[currentPhraseIndex];
+                }
+            }, 1200);
         }
 
-        html += "</table>";
+        const formData = new FormData(admissionForm);
+        if (!formData.get('dob')) {
+            formData.set('dob', '1900-01-01'); 
+        }
 
-        temp.innerHTML = html;
+        window.scrollTo(0, 0);
 
-        document.body.appendChild(temp);
+        const valuesMap = {};
+        const orderedFieldNames = [];
 
-        /* WAIT FOR RENDER */
-        await new Promise(r => setTimeout(r, 800));
-
-        /* GENERATE PDF */
-        const pdfBlob = await html2pdf()
-            .set({
-                margin: 8,
-                filename: "Application.pdf",
-                image: {
-                    type: "jpeg",
-                    quality: 1
-                },
-                html2canvas: {
-                    scale: 2,
-                    logging: false,
-                    useCORS: true
-                },
-                jsPDF: {
-                    unit: "mm",
-                    format: "a4",
-                    orientation: "portrait"
-                }
-            })
-            .from(temp)
-            .outputPdf("blob");
-
-        /* REMOVE TEMP BOX */
-        document.body.removeChild(temp);
-
-        /* APPEND PDF TO FORM */
-        formData.append(
-            "generated_form_pdf",
-            pdfBlob,
-            "Application.pdf"
-        );
-
-        /* SEND TO PHP */
-        const response = await fetch(
-            "../app/submit_application.php",
-            {
-                method: "POST",
-                body: formData
+        admissionForm.querySelectorAll('input, select, textarea').forEach(input => {
+            if (!input.name || input.type === 'file' || input.type === 'submit' || input.type === 'button') return;
+            
+            let val = input.value.trim();
+            if (input.tagName.toLowerCase() === 'select') {
+                val = input.options[input.selectedIndex] ? input.options[input.selectedIndex].text : val;
             }
-        );
+            
+            if (!orderedFieldNames.includes(input.name)) {
+                orderedFieldNames.push(input.name);
+            }
+            valuesMap[input.name] = (val === "" || val === "Select") ? "Not Provided" : val;
+        });
 
-        const result = await response.text();
+        const categories = {
+            student: { title: "Student Personal Profile & Identity", fields: [] },
+            guardian: { title: "Parent, Guardian & Emergency Contacts", fields: [] },
+            additional: { title: "Additional Application Information", fields: [] }
+        };
 
-        alert("Application Submitted");
+        orderedFieldNames.forEach(name => {
+            const lowerName = name.toLowerCase();
+            if (lowerName.includes('parent') || lowerName.includes('guardian') || lowerName.includes('emergency') || lowerName.includes('contact_person') || lowerName.includes('kin')) {
+                categories.guardian.fields.push(name);
+            } else if (lowerName.includes('first_name') || lowerName.includes('last_name') || lowerName.includes('id_number') || lowerName.includes('dob') || lowerName.includes('gender') || lowerName.includes('age') || lowerName.includes('learner') || lowerName.includes('student') || lowerName.includes('birth')) {
+                categories.student.fields.push(name);
+            } else {
+                categories.additional.fields.push(name);
+            }
+        });
 
-        location.reload();
+        let html = `
+            <div style="font-family: 'Helvetica Neue', Arial, sans-serif; color: #1e293b; padding: 20px; background: #ffffff;">
+                <table style="width: 100%; border-collapse: collapse; border-bottom: 3px solid #1e40af; margin-bottom: 25px;">
+                    <tr>
+                        <td style="width: 80%; vertical-align: middle; padding-bottom: 20px;">
+                            <h1 style="margin: 0 0 6px 0; color: #1e40af; font-size: 28px; font-weight: 800; text-transform: uppercase;">Hoye Secondary School</h1>
+                            <p style="margin: 0 0 4px 0; font-size: 13px; color: #2563eb; font-weight: 700; text-transform: uppercase;">Official Admission Information Record</p>
+                        </td>
+                        <td style="width: 20%; text-align: right; vertical-align: middle; padding-bottom: 20px;">
+                            <img src="images/school.jpg" style="width: 75px; height: auto; display: block; margin-left: auto;" alt="School Logo" />
+                        </td>
+                    </tr>
+                </table>
+        `;
 
-    } catch (err) {
-        console.error(err);
-        alert("PDF failed.");
+        Object.keys(categories).forEach(catKey => {
+            const category = categories[catKey];
+            if (category.fields.length === 0) return;
+
+            html += `
+                <div style="margin-bottom: 25px; page-break-inside: avoid;">
+                    <div style="background: #f1f5f9; padding: 10px 14px; border-left: 4px solid #1e40af; margin-bottom: 10px;">
+                        <h3 style="margin: 0; font-size: 12px; color: #1e3a8a; text-transform: uppercase; font-weight: 800;">${category.title}</h3>
+                    </div>
+                    <table style="width: 100%; border-collapse: collapse; border: 1px solid #e2e8f0; background: #ffffff;">
+            `;
+
+            category.fields.forEach((fieldName, index) => {
+                let label = fieldName.replace(/_/g, " ").replace(/\b\w/g, a => a.toUpperCase());
+                let rawValue = valuesMap[fieldName];
+                let rowBg = index % 2 === 0 ? "#ffffff" : "#f8fafc";
+                let borderBottom = index === category.fields.length - 1 ? "" : "border-bottom: 1px solid #e2e8f0;";
+
+                html += `
+                    <tr style="background: ${rowBg};">
+                        <td style="padding: 11px 16px; width: 38%; font-weight: 700; color: #475569; font-size: 12px; ${borderBottom}">${label}</td>
+                        <td style="padding: 11px 16px; width: 62%; color: #0f172a; font-weight: 500; font-size: 12px; ${borderBottom}">${rawValue}</td>
+                    </tr>
+                `;
+            });
+
+            html += `</table></div>`;
+        });
+
+        html += `</div>`;
+        tempBox.innerHTML = html;
+
+        // Briefly wait for browser layout engine to catch up
+        await new Promise(resolve => setTimeout(resolve, 300));
+
+        const opt = {
+            margin: 15,
+            filename: "Application.pdf",
+            image: { type: "jpeg", quality: 0.95 },
+            html2canvas: { scale: 2, useCORS: true, logging: false },
+            jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
+        };
+
+        const pdfBlob = await html2pdf().set(opt).from(tempBox).output('blob');
+        tempBox.innerHTML = "";
+
+        formData.append("pdf_form_path", pdfBlob, "Application.pdf");
+
+        const response = await fetch('http://localhost/HOYE-SECONDARY-SCHOOL/app/submit_application.php', {
+            method: 'POST',
+            body: formData 
+        });
+
+        // SAFETY GATEWAY Check: Kill spinner instantly if the script returns a server error code
+        if (!response.ok) {
+            const rawErrText = await response.text();
+            throw new Error(`HTTP Error Status ${response.status}: ${rawErrText}`);
+        }
+
+        const result = await response.json();
+
+        if (statusTimer) clearInterval(statusTimer);
+        if (processingModal) processingModal.style.display = 'none';
+
+        if (result.status === "success") {
+            document.getElementById("displayRef").innerText = result.tracking_number;
+            document.getElementById("successModal").style.display = "flex";
+        } else {
+            alert("Application Database Mismatch: " + result.message);
+        }
+
+    } catch (error) {
+        if (statusTimer) clearInterval(statusTimer);
+        if (processingModal) processingModal.style.display = 'none';
+        console.error("Submission Failure Pipeline:", error);
+        alert("CRITICAL ERROR: " + error.message);
+    } finally {
+        btn.disabled = false;
+        btn.innerText = "Submit Application";
     }
-
-    btn.disabled = false;
-    btn.innerText = "Submit & Download PDF";
 }
 
+function copyRef() {
+    const refText = document.getElementById("displayRef").innerText;
+    navigator.clipboard.writeText(refText);
+    
+    const copyBtn = event.target;
+    const originalText = copyBtn.innerText;
+    copyBtn.innerText = "Copied!";
+    copyBtn.style.background = "#dcfce7";
+    
+    setTimeout(() => {
+        copyBtn.innerText = originalText;
+        copyBtn.style.background = "#f1f5f9";
+    }, 2000);
+}
 // Start the form at step 0
-showStep(0);</script>
+showStep(0);
+</script>
 </div></div></div>
 <div id="pdf-template" style="position: absolute; left: -9999px; top: 0; width: 800px; padding: 50px; background: white; color: black;">
     <div style="text-align: center; border-bottom: 2px solid #000; padding-bottom: 20px;">
@@ -1752,5 +1870,80 @@ showStep(0);</script>
         </div>
 </div>
 </div>
+<div id="successModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:10000; align-items:center; justify-content:center;">
+    <div style="background:white; padding:40px; border-radius:24px; max-width:450px; width:90%; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.2); animation: slideUp 0.4s ease-out;">
+        <div style="width:80px; height:80px; background:#dcfce7; color:#16a34a; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:40px;">✓</div>
+        
+        <h2 style="margin:0 0 10px; color:#1e293b;">Application Sent!</h2>
+        <p style="color:#64748b; margin-bottom:24px;">Your application has been received. Please save your tracking number below:</p>
+        
+        <div style="background:#f1f5f9; padding:16px; border-radius:12px; border:2px dashed #cbd5e1; margin-bottom:24px;">
+            <span style="display:block; font-size:12px; color:#64748b; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">Tracking Reference</span>
+            <strong id="displayRef" style="font-size:24px; color:#1d4ed8; font-family:monospace;">---</strong>
+        </div>
+
+        <button onclick="copyRef()" style="background:#f1f5f9; border:none; padding:10px 20px; border-radius:8px; cursor:pointer; font-weight:600; color:#475569; margin-bottom:20px;">Copy Number</button>
+        
+        <button onclick="window.location.reload()" style="display:block; width:100%; background:#1d4ed8; color:white; border:none; padding:16px; border-radius:14px; font-weight:700; cursor:pointer; font-size:16px;">Finish & Close</button>
+    </div>
+</div>
+
+<div id="premiumAlertCard" style="display: none; position: fixed; top: 25px; right: 25px; z-index: 999999; width: 400px; background: #ffffff; border-radius: 16px; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15), 0 0 1px 1px rgba(15, 23, 42, 0.05); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); transform: translateX(50px); opacity: 0; font-family: system-ui, -apple-system, sans-serif; overflow: hidden;">
+    <div style="height: 4px; background: linear-gradient(90deg, #ef4444, #f87171);"></div>
+    
+    <div style="padding: 20px; display: flex; align-items: start; gap: 16px;">
+        <div style="background: #fef2f2; padding: 10px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 44px; height: 44px; border: 1px solid #fee2e2;">
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px; color: #ef4444;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+        </div>
+        
+        <div style="flex-grow: 1;">
+            <h4 style="margin: 0; font-size: 15px; font-weight: 800; color: #0f172a; letter-spacing: -0.3px;">Incomplete Information Detected</h4>
+            <p style="margin: 6px 0 0; font-size: 13px; color: #475569; line-height: 1.5; font-weight: 500;">To maintain enrollment processing accuracy, Hoye Admissions requires all fields marked with an asterisk (<span style="color: #ef4444; font-weight: bold;">*</span>) to be fully answered before proceeding.</p>
+        </div>
+        
+        <button type="button" onclick="closePremiumAlert()" style="background: none; border: none; cursor: pointer; color: #94a3b8; padding: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border-radius: 6px; transition: background 0.2s;" onmouseover="this.style.background='#f1f5f9'" onmouseout="this.style.background='none'">
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+</div>
+
+<style>
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+</style>
+<div style="position: absolute; top: 0; left: 0; width: 1px; height: 1px; overflow: hidden; background: transparent;">
+    <div id="permanentPdfTarget" style="width: 750px; background: #ffffff; color: #000000; padding: 40px; font-family: Arial, sans-serif; box-sizing: border-box;"></div>
+</div>
+
+<div id="processingModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); z-index: 9999; align-items: center; justify-content: center;">
+    <div style="background: rgba(255, 255, 255, 0.95); width: 90%; max-width: 420px; padding: 40px 30px; border-radius: 24px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); border: 1px solid rgba(255, 255, 255, 0.4); text-align: center;">
+        
+        <div style="position: relative; width: 80px; height: 80px; margin: 0 auto 25px;">
+            <div style="box-sizing: border-box; position: absolute; width: 100%; height: 100%; border: 5px solid #eff6ff; border-radius: 50%;"></div>
+            <div style="box-sizing: border-box; position: absolute; width: 100%; height: 100%; border: 5px solid transparent; border-top-color: #3b82f6; border-left-color: #3b82f6; border-radius: 50%; animation: hoye-spin 1s linear infinite;"></div>
+        </div>
+
+        <h4 style="font-family: 'Inter', sans-serif; color: #0f172a; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px;">Processing Application</h4>
+        <p id="processingStatusText" style="font-family: 'Inter', sans-serif; color: #64748b; font-size: 14px; font-weight: 500; min-height: 22px; margin: 0;">Assembling application profiles...</p>
+        
+        <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #f1f5f9;">
+            <p style="font-family: 'Inter', sans-serif; color: #94a3b8; font-size: 11px; margin: 0; text-transform: uppercase; font-weight: 600; letter-spacing: 0.5px;">Please do not close or refresh this page</p>
+        </div>
+    </div>
+</div>
+
+<style>
+@keyframes hoye-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+</style>
+
 </body>
 </html>

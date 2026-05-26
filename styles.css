@@ -2888,3 +2888,6 @@ blockquote {
   font-style: italic;
   color: #1e3a8a;
 }
+html {
+  scroll-behavior: smooth;
+}

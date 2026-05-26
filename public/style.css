@@ -197,3 +197,14 @@ button {
     transition: width 0.4s ease;
     border-radius: 20px;
 }
+/* Highlights the input container in soft red warnings */
+.field.error input, 
+.field.error select {
+    border: 2px solid #ef4444 !important;
+    background-color: #fef2f2 !important;
+}
+
+/* Turns the label text dark red */
+.field.error label {
+    color: #b91c1c !important;
+}

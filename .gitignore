@@ -1,0 +1,25 @@
+
+# HOYE SECONDARY ADMISSIONS SYSTEM - PRODUCTION GIT IGNORE LIFECYCLE
+
+# 1. CORE CREDENTIAL MASKS (CRITICAL)
+config.php
+
+# 2. LOCAL UPLOADS & STUDENT PRIVATE MEDIA
+storage/
+uploads/
+attachments/
+*.pdf
+*.docx
+*.jpg
+*.png
+*.jpeg
+
+# 3. ENVIRONMENT LOGS & CACHE RUNNERS
+*.log
+.env
+.env.local
+
+# 4. OPERATING SYSTEM JUNK CHANNELS
+.DS_Store
+Thumbs.db
+desktop.ini]
