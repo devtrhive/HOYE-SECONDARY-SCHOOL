@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="theme-color" content="#1e3a8a">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Website</title>
+    <title>HOYE SECONDARY</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          primary: '#2563EB'
-        }
-      }
-    }
-  }
-</script>
+    <link rel="manifest" href="manifest.json">
+    <link rel="canonical" href="https://hoyesecondarysch.com/">
+   
+    <link rel="icon" type="image/png" sizes="192x192" href="https://hoyesecondarysch.com/images/app-logo.jpg">
+    <link rel="apple-touch-icon" href="https://hoyesecondarysch.com/images/app-logo.jpg">
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WD2TL72YPE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WD2TL72YPE');
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-   <!-- HEADER / NAV -->
+<!-- HEADER / NAV (Optimized mobile header dimensions) -->
 <header class="fixed top-0 left-0 right-0 z-50 bg-blue-50/90 backdrop-blur-xl border-b border-blue-100 shadow-sm">
  <div class="max-w-8xl mx-auto px-6">
-    <div class="flex items-center justify-between h-30">
+
+    <div class="flex items-center justify-between h-16 md:h-24">
       <!-- Brand -->
       <div class="flex items-center gap-4" aria-hidden="false">
         <a href="index.html" class="flex-shrink-0 group">
           <div class="relative">
-            <img src="images/school.jpg" alt="Hoye Secondary School logo" class="h-14 w-auto transition-transform group-hover:scale-110 duration-300">
+         
+            <img src="images/school.jpg" alt="Hoye Secondary School logo" class="h-10 md:h-14 w-auto transition-transform group-hover:scale-110 duration-300">
             <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </div>
         </a>
         <div class="flex flex-col">
-          <div class="font-bold text-m text-slate-800 tracking-tight">HOYE SECONDARY SCHOOL</div>
-          <div class="text-xs text-primary font-medium">SUCCESS THROUGH EDUCATION </div>
+         
+          <div class="font-bold text-xs md:text-sm text-slate-800 tracking-tight">HOYE SECONDARY SCHOOL</div>
+          <div class="text-[10px] md:text-xs text-primary font-medium">SUCCESS THROUGH EDUCATION </div>
         </div>
       </div>
 
@@ -133,13 +150,13 @@
   </div>
   
  <!-- Hero Content - Centered -->
-  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 py-16 sm:py-20 lg:py-22">
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 py-9 sm:py-20 lg:py-15">
     <div class="flex flex-col items-center text-center">
       
       <!-- Badge -->
-      <div class="inline-flex items-center gap-2 px-4 py-2.5 bg-primary/10 rounded-full border border-primary/20 animate-slide-up shadow-sm mb-6">
+      <div class="inline-flex items-center gap-2 px-2 py-2.5 bg-primary/10 rounded-full border border-primary/20 animate-slide-up shadow-sm mb-4">
         <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
-        <span class="text-xs sm:text-sm font-semibold text-primary tracking-wide">SUCCESS THROUGH EDUCATION</span>
+        <span class="text-xs sm:text-sm font-semibold text-primary tracking-wide"> SUCCESS THROUGH EDUCATION</span>
       </div>
       
       <!-- Main Heading -->
@@ -271,8 +288,10 @@
       </div>
     </div>
 
+
   </div>
 </section>
+
 
         <!-- Scroll Indicator -->
   <div class="absolute bottom-1 left-1/2 transform -translate-x-1/2 animate-bounce">
@@ -282,14 +301,18 @@
   </div>
     </section>
 
+   <!-- Anchor offset -->
+<div id="event-offset" class="block h-10 sm:h-10 lg:h-15"></div>
+      <section id="event" class="page pt-16 sm:pt-24 lg:pt-24 bg-white relative overflow-hidden">
 
-   <section id="event" class="page">
-  <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23000000" fill-opacity="0.02"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
-  
-  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23000000\" fill-opacity=\"0.02\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-9">
+
     <!-- Section Header -->
-    <div class="text-center mb-16">
-      <h2 id="aboutHeading" class="text-5xl lg:text-6xl font-black text-slate-900 mb-6">
+    <div class="text-center mb-10">
+      <h2 id="aboutHeading" class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">
         <span class="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
           EVENTS
         </span>
@@ -297,31 +320,169 @@
       <div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
     </div>
 
-    <!-- EVENT 1 -->
+   <!-- EVENT: WEBSITE LAUNCH (UPDATED WITH REAL IMAGES) -->
     <div class="event-card">
-      <!-- Checkbox toggle -->
-      <input type="checkbox" id="event1" hidden>
+      <input type="checkbox" id="eventWebsiteLaunch" hidden>
 
-      <!-- Entire folder clickable -->
-      <label for="event1" class="event-row">
+      <label for="eventWebsiteLaunch" class="event-row">
         <div class="event-summary">
-          <img src="images/20255.png" alt="Event 1">
+          <img src="images/website launch.png" alt="Official Website Launch">
         </div>
         <div class="event-info">
-          <span class="event-date">📅 Term 2 · 2024</span>
-          <h3>Grade 12 Top Achievers</h3>
-          <p>Award ceremony celebrating academic excellence.</p>
+          <span class="event-date flex items-center gap-1.5">
+            <i data-lucide="calendar" class="w-4 h-4"></i> May · 2026
+          </span>
+          <h3>Official Website Launch</h3>
+          <p>Introducing the new Hoye Digital Portal. Celebrating our enhanced community connection and modern digital footprint.</p>
         </div>
       </label>
-      <!-- Gallery -->
+      
       <div class="event-gallery">
-        <div class="award-item"><a href="images/award1.jpg" view><img src="images/award1.jpg" alt=""></a><p>🏅 Top Achievers</p></div>
-        <div class="award-item"><a href="images/award2.jpg" view><img src="images/award2.jpg" alt=""></a><p>🏅 Top Achievers</p></div>
-        <div class="award-item"><a href="images/award3.jpg" view><img src="images/award3.jpg" alt=""></a><p>🏅 Top Achievers</p></div>
-        <div class="award-item"><a href="images/award4.jpg" view><img src="images/award4.jpg" alt=""></a><p>🏅 Top Achievers</p></div>
-        <div class="award-item"><a href="images/award5.jpg" view><img src="images/award5.jpg" alt=""></a><p>🏅 Top Achievers</p></div>
-        <label for="event1" class="close-btn">Close</label>
-      </div>
+        
+        <div class="overflow-y-auto max-h-[75vh] md:max-h-none p-2 sm:p-4 scroll-smooth w-full">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
+            
+            <div class="award-item flex flex-col">
+              <a href="images/prinipal.jpeg" view class="block w-full">
+                <img src="images/prinipal.jpeg" alt="Principal Address" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="user-check" class="w-4 h-4 inline-block mr-1"></i> Principal</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/mshikilane.jpeg" view class="block w-full">
+                <img src="images/mshikilane.jpeg" alt="Staff Briefing" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="mic" class="w-4 h-4 inline-block mr-1"></i> Programme Director: Mr. N. Jule</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/hlongwane.jpeg" view class="block w-full">
+                <img src="images/hlongwane.jpeg" alt="Admin Operations" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="graduation-cap" class="w-4 h-4 inline-block mr-1"></i> Distinguished Alumnus: Mr. H.M. Hlongwane</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/MsH.jpeg" view class="block w-full">
+                <img src="images/MsH.jpeg" alt="Academic Desk" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="mic" class="w-4 h-4 inline-block mr-1"></i> Ms. S.P. Hlubi</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nuttydev.jpeg" view class="block w-full">
+                <img src="images/nuttydev.jpeg" alt="Development Team" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="users" class="w-4 h-4 inline-block mr-1"></i> Hoye Educators & Staff</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nuttydev2.jpeg" view class="block w-full">
+                <img src="images/nuttydev2.jpeg" alt="Platform Engineering" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="users" class="w-4 h-4 inline-block mr-1"></i>Hoye Educators & Staff</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nuttydev5.jpeg" view class="block w-full">
+                <img src="images/nuttydev5.jpeg" alt="Backend Systems" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="users" class="w-4 h-4 inline-block mr-1"></i> Hoye Educators & Staff</p>
+            </div>
+            
+            <div class="award-item flex flex-col">
+              <a href="images/nutty.jpg" view class="block w-full">
+                <img src="images/nutty.jpg" alt="System Deployment" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="users" class="w-4 h-4 inline-block mr-1"></i> Hoye Educators & Staff</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nutty.jpeg" view class="block w-full">
+                <img src="images/nutty.jpeg" alt="Project Launch" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="gift" class="w-4 h-4 inline-block mr-1"></i> Official Website Launch Honor</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nutty2.jpeg" view class="block w-full">
+                <img src="images/nutty2.jpeg" alt="UI Review" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="gift" class="w-4 h-4 inline-block mr-1"></i> Hoye Digital Achievement Award</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nutty3.jpeg" view class="block w-full">
+                <img src="images/nutty3.jpeg" alt="Content Portal" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="medal" class="w-4 h-4 inline-block mr-1"></i> Top 10 Academic Achievers</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/hluu.jpeg" view class="block w-full">
+                <img src="images/hluu.jpeg" alt="Core Team" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="camera" class="w-4 h-4 inline-block mr-1"></i> Memorable Launch Highlights</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nt.jpeg" view class="block w-full">
+                <img src="images/nt.jpeg" alt="Technical Team" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="users" class="w-4 h-4 inline-block mr-1"></i>Representative Learners</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/ntt.jpg" view class="block w-full">
+                <img src="images/ntt.jpg" alt="Technical Desk" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="users" class="w-4 h-4 inline-block mr-1"></i>Representative Learners</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nuttytt.jpeg" view class="block w-full">
+                <img src="images/nuttytt.jpeg" alt="Media Desk" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="users" class="w-4 h-4 inline-block mr-1"></i>Representative Learners</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nuttyy.jpeg" view class="block w-full">
+                <img src="images/nuttyy.jpeg" alt="Testing & QA" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="user-check" class="w-4 h-4 inline-block mr-1"></i> Student Body Attendees</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nuttyyy.jpeg" view class="block w-full">
+                <img src="images/nuttyyy.jpeg" alt="Network Operations" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="users" class="w-4 h-4 inline-block mr-1"></i>Representative Learners</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nutttyy.jpeg" view class="block w-full">
+                <img src="images/nutttyy.jpeg" alt="Digital Showcase" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="users" class="w-4 h-4 inline-block mr-1"></i>Representative Learners</p>
+            </div>
+
+            <div class="award-item flex flex-col">
+              <a href="images/nuttttyy.jpeg" view class="block w-full">
+                <img src="images/nuttttyy.jpeg" alt="Project Wrap-up" class="w-full aspect-square object-cover rounded-lg shadow-sm" style="aspect-ratio: 1/1;">
+              </a>
+              <p class="mt-2 text-sm text-center leading-tight"><i data-lucide="sparkles" class="w-4 h-4 inline-block mr-1"></i> Benediction & Closing Prayer</p>
+            </div>
+            
+          </div> <div class="w-full flex justify-center pt-8 pb-4">
+            <label for="eventWebsiteLaunch" class="close-btn px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:scale-105 transition-all duration-200 cursor-pointer text-center inline-flex items-center gap-2 shadow-md">
+              <i data-lucide="x-circle" class="w-4 h-4"></i> Close Gallery
+            </label>
+          </div>
+
+        </div> </div>
     </div>
 
     <!-- EVENT 2 -->
@@ -333,21 +494,61 @@
           <img src="images/20244.png" alt="Event 2">
         </div>
         <div class="event-info">
-          <span class="event-date">📅 Term 1 · 2025</span>
+          <span class="event-date flex items-center gap-1.5">
+            <i data-lucide="calendar" class="w-4 h-4"></i> Term 1 · 2025
+          </span>
           <h3>Grade 12 Top Achievers Award Ceremony</h3>
           <p>Celebrating academic consistency and dedication.</p>
         </div>
       </label>
       <div class="event-gallery">
-        <div class="award-item"><a href="images/top1.jpg" view><img src="images/top1.jpg" alt=""></a><p>🏅 Top Achievers</p></div>
-        <div class="award-item"><a href="images/top2.jpg" view><img src="images/top2.jpg" alt=""></a><p>🏅 Top Achievers</p></div>
-        <div class="award-item"><a href="images/top3.jpg" view><img src="images/top3.jpg" alt=""></a><p>🏅 Top Achievers</p></div>
-        <div class="award-item"><a href="images/top4.jpg" view><img src="images/top4.jpg" alt=""></a><p>🏅 Top Achievers</p></div>
-        <div class="award-item"><a href="images/top5.jpg" view><img src="images/top5.jpg" alt=""></a><p>🏅 Top Achievers</p></div>
-        <label for="event2" class="close-btn">Close</label>
+        <div class="award-item"><a href="images/top1.jpg" view><img src="images/top1.jpg" alt=""></a><p><i data-lucide="medal" class="w-4 h-4 inline-block mr-1"></i> Top Achievers</p></div>
+        <div class="award-item"><a href="images/top2.jpg" view><img src="images/top2.jpg" alt=""></a><p><i data-lucide="medal" class="w-4 h-4 inline-block mr-1"></i> Top Achievers</p></div>
+        <div class="award-item"><a href="images/top3.jpg" view><img src="images/top3.jpg" alt=""></a><p><i data-lucide="medal" class="w-4 h-4 inline-block mr-1"></i> Top Achievers</p></div>
+        <div class="award-item"><a href="images/top4.jpg" view><img src="images/top4.jpg" alt=""></a><p><i data-lucide="medal" class="w-4 h-4 inline-block mr-1"></i> Top Achievers</p></div>
+        <div class="award-item"><a href="images/top5.jpg" view><img src="images/top5.jpg" alt=""></a><p><i data-lucide="medal" class="w-4 h-4 inline-block mr-1"></i> Top Achievers</p></div>
+       
+        <!-- Clean Bottom Close Button Inside Grid Spanner -->
+        <div class="col-span-full w-full flex justify-center pt-6 pb-2">
+          <label for="event2" class="close-btn px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:scale-105 transition-all duration-200 cursor-pointer text-center inline-flex items-center gap-2 shadow-md">
+            <i data-lucide="x-circle" class="w-4 h-4"></i> Close Gallery
+          </label>
+        </div>
+      </div>
+    </div> <!-- Event Card Closed Cleanly -->
+
+    <!-- EVENT 1 -->
+    <div class="event-card">
+      <input type="checkbox" id="event1" hidden>
+
+      <label for="event1" class="event-row">
+        <div class="event-summary">
+          <img src="images/20255.png" alt="Event 1">
+        </div>
+        <div class="event-info">
+          <span class="event-date flex items-center gap-1.5">
+            <i data-lucide="calendar" class="w-4 h-4"></i> Term 2 · 2024
+          </span>
+          <h3>Grade 12 Top Achievers</h3>
+          <p>Award ceremony celebrating academic excellence and dedication.</p>
+        </div>
+      </label>
+      <div class="event-gallery">
+        <div class="award-item"><a href="images/award1.jpg" view><img src="images/award1.jpg" alt=""></a><p><i data-lucide="award" class="w-4 h-4 inline-block mr-1"></i> Top Achievers</p></div>
+        <div class="award-item"><a href="images/award2.jpg" view><img src="images/award2.jpg" alt=""></a><p><i data-lucide="award" class="w-4 h-4 inline-block mr-1"></i> Top Achievers</p></div>
+        <div class="award-item"><a href="images/award3.jpg" view><img src="images/award3.jpg" alt=""></a><p><i data-lucide="award" class="w-4 h-4 inline-block mr-1"></i> Top Achievers</p></div>
+        <div class="award-item"><a href="images/award4.jpg" view><img src="images/award4.jpg" alt=""></a><p><i data-lucide="award" class="w-4 h-4 inline-block mr-1"></i> Top Achievers</p></div>
+        <div class="award-item"><a href="images/award5.jpg" view><img src="images/award5.jpg" alt=""></a><p><i data-lucide="award" class="w-4 h-4 inline-block mr-1"></i> Top Achievers</p></div>
+        
+        <!-- Clean Bottom Close Button Inside Grid Spanner -->
+        <div class="col-span-full w-full flex justify-center pt-6 pb-2">
+          <label for="event1" class="close-btn px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:scale-105 transition-all duration-200 cursor-pointer text-center inline-flex items-center gap-2 shadow-md">
+            <i data-lucide="x-circle" class="w-4 h-4"></i> Close Gallery
+          </label>
+        </div>
       </div>
     </div>
-
+    
   </div>
 </section>
 
@@ -582,7 +783,7 @@
       </span>
 
       <h3 class="text-2xl font-bold text-slate-900 mt-2">
-        Mrs. I.Z. Mazibuko
+        Ms. I.Z. Mazibuko
       </h3>
 
       <p class="text-slate-600 mt-4 leading-relaxed">
@@ -668,31 +869,24 @@
 </div>
 </section>
 
-  <section id="performances" class="page relative py-24 lg:py-32 overflow-hidden">
-  
+   <!-- Anchor offset -->
+<div id="performances-offset" class="block h-10 sm:h-10 lg:h-15"></div>
+      <section id="performances" class="page pt-16 sm:pt-24 lg:pt-24 bg-white relative overflow-hidden">
+
   <!-- Background Pattern -->
-  <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23000000\" fill-opacity=\"0.02\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40 pointer-events-none"></div>
+  <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23000000\" fill-opacity=\"0.02\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+  <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-9">
 
-    <!-- Header -->
-<div class="text-center mb-16 px-6 sm:px-6">
-  <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-  <span class="block text-primary tracking-tight">
-    Academic Performance
-  </span>
-  <span class="block text-secondary font-extrabold">
-    Overview
-  </span>
-</h2>
-
-  <p class="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-    A record of academic excellence showcasing our matric results, learner achievement, and steady progress over the years.
-  </p>
-
+    <!-- Section Header -->
+    <div class="text-center mb-10">
+      <h2 id="aboutHeading" class="text-4xl lg:text-5xl font-black text-slate-900 mb-4">
+        <span class="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
+      PERFORMANCES
+        </span>
+      </h2>
       <div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
     </div>
-
     <!-- Table Hint -->
     <p class="table-hint text-center text-sm text-slate-500 mb-4">
       ⬅ Swipe to view full table ➡
@@ -945,8 +1139,7 @@
   </div>
 </section>
 
-
-   <section id="learner-support" class="relative page bg-slate-50 py-24">
+<section id="learner-support" class="relative page bg-slate-50 py-24">
 
   <!-- Header -->
  <div class="text-center mb-20">
@@ -1179,27 +1372,26 @@
 </section>
 
 
-<!-- Anchor offset -->
-<div id="career-guide-offset" class="block h-32 sm:h-28 lg:h-20"></div>
-      <section id="career-guide" class="page pt-24 sm:pt-28 lg:pt-32 bg-white relative overflow-hidden">
+
+ <!-- Anchor offset -->
+<div id="career-guide-offset" class="block h-10 sm:h-10 lg:h-15"></div>
+      <section id="career-guide" class="page pt-16 sm:pt-24 lg:pt-24 bg-white relative overflow-hidden">
 
   <!-- Background Pattern -->
   <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23000000\" fill-opacity=\"0.02\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
+  <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-9">
 
-    <!-- Header -->
-    <div class="text-center mb-12 sm:mb-16">
-       <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-  <span class="block text-primary tracking-tight">
-    Career Guide
-  </span>
-</h2>
-      <p class="text-xl text-slate-600 max-w-3xl mx-auto">
-        Explore bursaries, university applications, and financial aid opportunities to help you plan your future.
-      </p>
-      <div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto mt-6 rounded-full"></div>
+    <!-- Section Header -->
+    <div class="text-center mb-10">
+      <h2 id="aboutHeading" class="text-5xl lg:text-6xl font-black text-slate-900 mb-4">
+        <span class="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
+          CAREER GUIDE
+        </span>
+      </h2>
+      <div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
     </div>
+
 
     <!-- Cards -->
     <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -1464,21 +1656,23 @@
 </section>
 <section id="about-us" class="page py-24 bg-slate-50 relative overflow-hidden">
 
-  <!-- subtle background -->
-  <div class="absolute inset-0 opacity-20"
-       style="background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.06) 1px, transparent 0); background-size: 22px 22px;"></div>
+    <!-- Background Pattern -->
+  <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23000000\" fill-opacity=\"0.02\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
 
-  <div class="relative max-w-7xl mx-auto px-6">
+  <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-5">
 
     <!-- HEADER -->
-    <div class="text-center mb-16">
-  <h2 id="aboutHeading" class="text-6xl lg:text-7xl font-black text-slate-900 mb-6 tracking-tighter">
-    <span class="bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-600 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient uppercase">
-      About Us
-    </span>
-  </h2>
+<div class="relative z-10 max-w-7xl mx-auto px-2 sm:px-6 lg:px-3">
+    <div class="text-center mb-10">
+      <div class="text-center mb-16 px-7 sm:px-7">
+  <h2 class="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading">
+ <span class="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
+          ABOUT HOYE
+        </span>
+</h2>
   
-  <div class="h-1.5 w-24 bg-gradient-to-r from-blue-600 to-indigo-500 mx-auto rounded-full shadow-md"></div>
+  <div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+    </div>
   
   <p class="text-lg text-slate-600 max-w-3xl mx-auto mt-8 font-medium leading-relaxed">
     Reach the school through official communication channels below.
@@ -1823,34 +2017,119 @@ function toggleQA(id) {
 }
 </script>
 </section>
-<section id="announcements" class="page py-24 bg-white relative overflow-hidden">
+
+<!-- Anchor offset -->
+
+<div id="announcements-offset" class="block h-10 sm:h-10 lg:h-15"></div>
+      <section id="announcements" class="page pt-16 sm:pt-24 lg:pt-24 bg-white relative overflow-hidden">
 
   <!-- Background Pattern -->
   <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23000000\" fill-opacity=\"0.02\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-9">
+
     <!-- Section Header -->
-    <div class="text-center mb-16">
-      <div class="text-center mb-16 px-6 sm:px-6">
-  <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
-  <span class="block text-primary tracking-tight">
-    Announcements
-  </span>
-</h2>
-      <p class="text-xl text-slate-600 max-w-3xl mx-auto mb-4">
-        Stay updated with our latest school news.
-      </p>
+    <div class="text-center mb-10">
+      <h2 id="aboutHeading" class="text-4xl lg:text-5xl font-black text-slate-900 mb-4">
+        <span class="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
+      ANNOUNCEMENTS
+        </span>
+      </h2>
       <div class="h-1 w-24 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
     </div>
+        
+      <div class="group relative bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300 max-w-[600px] mx-auto w-full">
+  
+  <img src="images/june.png" alt="June Exams Announcement" class="w-full h-85 md:h-88 lg:h-76 object-cover">
+  
+  <div class="p-6">
 
-    <!-- Announcement Cards Grid -->
-    <div class="grid gap-8 justify-center">
-   <!-- Announcement: LinkedIn Launch -->
-<div class="group relative bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300 max-w-[600px] mx-auto w-full">
+    <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-4 bg-slate-50 border border-slate-100 rounded-xl px-3 py-1.5 w-fit">
+      <span class="flex items-center gap-1 text-primary">
+        <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+        June 01, 2026
+      </span>
+      <span class="text-slate-300">•</span>
+      <span class="flex items-center gap-1">
+        <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+        14:30 PM
+      </span>
+    </div>
+
+    <h3 class="text-2xl font-bold text-slate-900 mb-4">June Exams 2026 Announcement</h3>
+    
+    <p class="text-slate-600 line-clamp-3">
+      The mid-year examination period is approaching. Good luck to all Hoye learners preparing for success in their upcoming papers...
+    </p>
+    
+    <button class="mt-4 px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:scale-105 transition-transform cursor-pointer" onclick="toggleAnnouncementContent(this)">
+      Read More
+    </button>
+    
+    <div class="announcement-content mt-4 hidden text-slate-700 space-y-3">
+      <p>
+        As the mid-year point of the academic calendar arrives, we want to extend our best wishes and support to all our learners as they prepare for the crucial June examinations. This examination period is an important milestone in setting the foundation for success for the remainder of the year.
+      </p>
+
+      <p>
+        Detailed timetables have been shared on each classroom. We kindly ask that learners thoroughly familiarize themselves with these schedules to ensure complete preparation for each specific subject. All exams will commence promptly at the designated times, and learners must be in full school uniform.
+      </p>
+
+      <p>
+        We encourage all learners to focus on consistent revision, utilize available study materials, and prioritize healthy habits during this demanding time. Our dedicated educators are available to offer support and guidance as needed.
+      </p>
+
+      <p>
+        We place a strong emphasis on the requirement that all learners must strictly follow all the instructions from their teacher about attendance, daily registration, and exam room procedures.
+      </p>
+
+      <p>
+        Furthermore, please note that official <strong>CAPS EXAMS RULES</strong> will be applied across all examination sessions. Adherence to these national standards is non-negotiable to maintain the integrity and credibility of our school's assessments.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-6 border-t border-slate-100 pt-4">
+      <a href="https://www.facebook.com/profile.php?id=61590224008590"
+         target="_blank"
+         class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-700 hover:bg-slate-100 transition-all duration-200">
+        <i data-lucide="facebook" class="w-4 h-4 text-[#1877F2]"></i>
+        <span class="font-medium text-xs">Facebook</span>
+      </a>
+      
+      <a href="https://www.linkedin.com/company/hoye-secondary-school/"
+         target="_blank"
+         class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-700 hover:bg-slate-100 transition-all duration-200">
+        <i data-lucide="linkedin" class="w-4 h-4 text-[#0A66C2]"></i>
+        <span class="font-medium text-xs">LinkedIn</span>
+      </a>
+      
+      <button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-700 hover:bg-slate-100 transition-all duration-200 cursor-pointer" onclick="copyAnnouncementLink(this)">
+        <i data-lucide="link-2" class="w-4 h-4 text-slate-500"></i>
+        <span class="font-medium text-xs">Copy Link</span>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+   <div class="group relative bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300 max-w-[600px] mx-auto w-full">
   
   <img src="images/Launch.jpg" alt="Hoye Secondary School LinkedIn Launch" class="w-full h-85 md:h-100 lg:h-100 object-cover">
 
   <div class="p-6">
+
+    <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-4 bg-slate-50 border border-slate-100 rounded-xl px-3 py-1.5 w-fit">
+      <span class="flex items-center gap-1 text-primary">
+        <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+        May 14, 2026
+      </span>
+      <span class="text-slate-300">•</span>
+      <span class="flex items-center gap-1">
+        <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+        09:15 AM
+      </span>
+    </div>
+
     <h3 class="text-2xl font-bold text-slate-900 mb-4">
       We’re Now Live on LinkedIn
     </h3>
@@ -1889,8 +2168,7 @@ function toggleQA(id) {
         Follow us on LinkedIn and stay connected as we continue building a modern, forward-thinking school.
       </p>
 
-      <!-- Optional Link -->
-      <a href="https://www.linkedin.com/company/hoye-secondary-school/
+      <a href="https://www.linkedin.com/company/hoye-secondary-school/"
            target="_blank"
          class="inline-block mt-2 text-primary font-semibold hover:underline">
         Visit our LinkedIn →
@@ -1903,6 +2181,19 @@ function toggleQA(id) {
       <div class="group relative bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300 max-w-[600px] mx-auto w-full">
         <img src="images/closed.png" alt="Application closed" class="w-full h-85 md:h-88 lg:h-76 object-cover">
         <div class="p-6">
+
+          <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-4 bg-slate-50 border border-slate-100 rounded-xl px-3 py-1.5 w-fit">
+            <span class="flex items-center gap-1 text-primary">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+              February 28, 2026
+            </span>
+            <span class="text-slate-300">•</span>
+            <span class="flex items-center gap-1">
+              <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+              17:00 PM
+            </span>
+          </div>
+
           <h3 class="text-2xl font-bold text-slate-900 mb-4">Application For 2026 Are Closed</h3>
           <p class="text-slate-600 line-clamp-3">
            The school has received an overwhelming number of applications this year...
@@ -1938,10 +2229,22 @@ function toggleQA(id) {
         </div>
       </div>
 
-      <!-- Announcement 3 -->
       <div class="group relative bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300 max-w-[600px] mx-auto w-full">
         <img src="images/SKAVS.png" alt="SKAVS AI" class="w-full h-85 md:h-100 lg:h-100 object-cover">
         <div class="p-6">
+
+          <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-4 bg-slate-50 border border-slate-100 rounded-xl px-3 py-1.5 w-fit">
+            <span class="flex items-center gap-1 text-primary">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+              January 15, 2026
+            </span>
+            <span class="text-slate-300">•</span>
+            <span class="flex items-center gap-1">
+              <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+              08:00 AM
+            </span>
+          </div>
+
           <h3 class="text-2xl font-bold text-slate-900 mb-4">Introducing SKAVS - Your Smart AI Assistant </h3>
           <p class="text-slate-600 line-clamp-3">
             Meet SKAVS – Hoye Secondary School’s Smart AI Assistant.
@@ -1978,10 +2281,22 @@ function toggleQA(id) {
           </div>
         </div>
       </div>
-      <!-- Announcement 1 -->
       <div class="group relative bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300 max-w-[600px] mx-auto w-full">
         <img src="images/image3.jpg" alt="Teacher Donation" class="w-full h-85 md:h-88 lg:h-76 object-cover">
         <div class="p-6">
+
+          <div class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-4 bg-slate-50 border border-slate-100 rounded-xl px-3 py-1.5 w-fit">
+            <span class="flex items-center gap-1 text-primary">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+              October 22, 2025
+            </span>
+            <span class="text-slate-300">•</span>
+            <span class="flex items-center gap-1">
+              <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+              11:45 AM
+            </span>
+          </div>
+
           <h3 class="text-2xl font-bold text-slate-900 mb-4">Mrs. L.S. Khumalo Donates Banner in Honour of Hoye Secondary</h3>
           <p class="text-slate-600 line-clamp-3">
             On the 22nd of October 2024, Hoye Secondary School celebrated a moment that will forever remain close to our hearts...
@@ -2042,11 +2357,10 @@ function toggleQA(id) {
     </div>
 
     <!-- Heading -->
-    <a href="#" 
-   onclick="event.preventDefault(); document.getElementById('closedModal').style.display='flex';" 
-   class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-700 text-white font-semibold hover:bg-blue-800 transition duration-300">
-  Start Application →
-</a>
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <h2 class="text-4xl md:text-5xl font-black text-slate-900 leading-tight">
+        Start Your Application Journey
+      </h2>
 
       <p class="mt-5 text-lg text-slate-600 leading-relaxed">
         Begin your learner admission journey through our secure and modern online system.
@@ -2057,7 +2371,7 @@ function toggleQA(id) {
     <!-- Cards -->
     <div class="grid md:grid-cols-2 gap-8">
 
-     - Apply Card -->
+      <!-- Apply Card -->
       <div class="group bg-white rounded-3xl p-8 shadow-xl border border-slate-100 hover:shadow-2xl hover:-translate-y-2 transition duration-300">
 
         <div class="w-16 h-16 rounded-2xl bg-blue-100 flex items-center justify-center text-3xl mb-6">
@@ -2072,10 +2386,11 @@ function toggleQA(id) {
           Complete and submit a new learner application quickly using our secure admissions form.
         </p>
 
-        <a href="public/index.html"
-           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-700 text-white font-semibold hover:bg-blue-800 transition duration-300">
-          Start Application →
-        </a>
+        <a href="#" 
+   onclick="event.preventDefault(); document.getElementById('closedModal').style.display='flex';" 
+   class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-700 text-white font-semibold hover:bg-blue-800 transition duration-300">
+    Start Application →
+</a>
       </div>
 
       <!-- Status Card -->
@@ -2093,10 +2408,11 @@ function toggleQA(id) {
           Track the progress of your submitted application in real-time with ease.
         </p>
 
-        <a href="public/track.html"
-           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition duration-300">
-          Track Application →
-        </a>
+        <a href="#" 
+   onclick="event.preventDefault(); document.getElementById('trackingModal').style.display='flex';" 
+   class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold hover:bg-slate-800 transition duration-300">
+    Track Application →
+</a>
       </div>
 
     </div>
@@ -2114,46 +2430,56 @@ function toggleQA(id) {
 
 <footer class="site-footer bg-slate-50 border-t border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-
     <div class="grid md:grid-cols-3 gap-10 items-start">
 
-      <!-- LEFT -->
-      <div class="flex items-center gap-6">
-        <a href="#" class="flex-shrink-0 group">
-          <div class="relative">
-            <img src="images/school.jpg" alt="Hoye Secondary School Logo"
-              class="h-16 w-auto rounded-xl transition-transform group-hover:scale-110 duration-300">
-            <div class="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+      <div class="flex flex-col justify-start text-left">
+        <div class="flex items-center gap-6">
+          <a href="#" class="flex-shrink-0 group">
+            <div class="relative">
+              <img src="images/school.jpg" alt="Hoye Secondary School Logo"
+                class="h-16 w-auto rounded-xl transition-transform group-hover:scale-110 duration-300" onerror="this.src='https://placehold.co/150'">
+              <div class="absolute inset-0 bg-primary/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>
+          </a>
+          <div>
+            <div class="font-bold text-xl text-slate-900 mb-1">
+              Hoye Secondary School
+            </div>
+            <div class="text-sm text-slate-600">
+              © 2026 All Rights Reserved
+            </div>
           </div>
-        </a>
-
-        <div>
-          <div class="font-bold text-xl text-slate-900 mb-1">
-            Hoye Secondary School
-          </div>
-          <div class="text-sm text-slate-600">
-            © 2026 All Rights Reserved
-          </div>
+        </div>
+        
+        <div class="mt-4 pl-[88px] flex flex-col items-start gap-3">
+          
+          <button 
+            onclick="window.location.href='mailto:support@hoyesecondarysch.com'" 
+            class="inline-flex items-center gap-2 text-sm text-slate-600 font-medium hover:text-teal-600 transition-colors duration-200 group cursor-pointer focus:outline-none"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-slate-400 group-hover:text-teal-500 transition-colors duration-200">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+            <span class="underline decoration-slate-300 group-hover:decoration-teal-500 underline-offset-4">
+              Report Web Issues
+            </span>
+          </button>
+          
         </div>
       </div>
 
-      <!-- CENTER -->
       <div class="text-center md:text-left space-y-4">
-
         <div class="font-semibold text-slate-900">
           Contact Information
         </div>
-
         <div class="flex items-center gap-3 text-slate-600 text-sm justify-center md:justify-start">
           <i data-lucide="phone" class="w-4 h-4 text-primary"></i>
           <span>072 307 1712</span>
         </div>
-
         <div class="flex items-center gap-3 text-slate-600 text-sm justify-center md:justify-start">
           <i data-lucide="mail" class="w-4 h-4 text-primary"></i>
           <span>hoye.sec@gmail.com</span>
         </div>
-
         <div class="flex items-start gap-3 text-slate-600 text-sm justify-center md:justify-start">
           <i data-lucide="map-pin" class="w-4 h-4 text-primary mt-1"></i>
           <span>
@@ -2162,35 +2488,53 @@ function toggleQA(id) {
             3350
           </span>
         </div>
-
       </div>
 
-      <!-- RIGHT -->
-      <div class="text-center md:text-right">
-
-        <div class="text-sm text-slate-600 mb-3">
+      <div class="text-center md:text-right flex flex-col items-center md:items-end w-full">
+        <div class="text-sm text-slate-600 mb-4">
           Success Through Education
         </div>
 
-        <a href="https://www.linkedin.com/company/hoye-secondary-school/"
-           target="_blank"
-           class="inline-flex items-center gap-2 text-primary font-semibold hover:underline text-sm">
-
-          <i data-lucide="linkedin" class="w-4 h-4"></i>
-          Visit our LinkedIn →
-        </a>
+        <div class="flex items-center justify-center md:justify-end gap-4 mb-4">
+          <a href="https://www.facebook.com/profile.php?id=61590224008590"
+             target="_blank"
+             title="Follow us on Facebook"
+             class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-slate-100 text-slate-700 hover:bg-blue-600 hover:text-white transition duration-300 shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/hoye-secondary-school/"
+             target="_blank"
+             title="Connect with us on LinkedIn"
+             class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-slate-100 text-slate-700 hover:bg-blue-700 hover:text-white transition duration-300 shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/xl" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
 
         <div class="flex items-center justify-center md:justify-end gap-2 mt-4">
-          <span class="w-2 h-2 bg-primary rounded-full animate-pulse"></span>
+          <span class="w-2 h-2 bg-blue-700 rounded-full animate-pulse"></span>
           <span class="text-xs text-slate-500">SKAVS</span>
         </div>
 
       </div>
-
     </div>
-
   </div>
 </footer>
+<style>
+  @keyframes shine {
+    100% { transform: translateX(250%); }
+  }
+  .group-hover\:animate-shine:hover::before, .group-hover\:animate-shine {
+    animation: shine 0.85s ease-in-out;
+  }
+</style>
+
+
    <script>
   // Wait for DOM
   document.addEventListener('DOMContentLoaded', () => {
@@ -2482,19 +2826,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
- <script>
-    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...args)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Rfstd3-hz7B7XfCU992Jw";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-    </script>
 
+<script src="https://unpkg.com/lucide@latest"></script>
 <script>
-    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...args)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Rfstd3-hz7B7XfCU992Jw";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-    </script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
   lucide.createIcons();
 </script>
-</script>
-    <div id="closedModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(15, 23, 42, 0.6); backdrop-filter: blur(8px); z-index: 99999; align-items:center; justify-content:center;">
+<div id="closedModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(15, 23, 42, 0.6); backdrop-filter: blur(8px); z-index: 99999; align-items:center; justify-content:center;">
     <div style="background: #ffffff; padding: 40px; border-radius: 16px; max-width: 440px; width: 90%; text-align: center; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); border-top: 6px solid #ef4444;">
         <h2 style="margin: 0 0 12px; color: #0f172a; font-family: system-ui, sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.5px; text-transform: uppercase;">Admissions Closed</h2>
         <p style="color: #64748b; font-family: system-ui, sans-serif; font-size: 15px; line-height: 1.6; margin: 0 0 28px;">Applications for the 2026 academic year are currently closed. Please monitor our official communications channels for updates regarding future registration timelines.</p>
